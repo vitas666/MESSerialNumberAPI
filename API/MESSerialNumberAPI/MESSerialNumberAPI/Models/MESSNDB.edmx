@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MESSNDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CodeMast">
+          <Key>
+            <PropertyRef Name="CodeKey" />
+          </Key>
+          <Property Name="CodeKey" Type="int" Nullable="false" />
+          <Property Name="CodeID" Type="nvarchar" MaxLength="20" />
+          <Property Name="CodeDesc" Type="nvarchar" MaxLength="50" />
+          <Property Name="CodeComment" Type="varchar" MaxLength="60" />
+        </EntityType>
+        <EntityType Name="PartCoding">
+          <Key>
+            <PropertyRef Name="PartCodingID" />
+          </Key>
+          <Property Name="PartCodingID" Type="int" Nullable="false" />
+          <Property Name="PartID" Type="int" />
+          <Property Name="CodingRule" Type="nvarchar" MaxLength="50" />
+          <Property Name="CtrlCode" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifyDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="PartMast">
+          <Key>
+            <PropertyRef Name="PartID" />
+          </Key>
+          <Property Name="PartID" Type="int" Nullable="false" />
+          <Property Name="FactID" Type="nvarchar" MaxLength="5" />
+          <Property Name="PartNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="PartDesc" Type="nvarchar" MaxLength="200" />
+          <Property Name="SerialType" Type="int" />
+          <Property Name="CtrlCode" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifyDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SctlMast">
+          <Key>
+            <PropertyRef Name="ScrmKey" />
+          </Key>
+          <Property Name="ScrmKey" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="ScrmDesc" Type="nvarchar" MaxLength="100" />
+          <Property Name="LastNo" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="LastDateTime" Type="datetime" />
+          <Property Name="CtrlCode" Type="int" />
+          <Property Name="CtrlString" Type="nvarchar(max)" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifyDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SerialData">
+          <Key>
+            <PropertyRef Name="SerialID" />
+          </Key>
+          <Property Name="SerialID" Type="int" Nullable="false" />
+          <Property Name="SerialNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="PartID" Type="int" />
+          <Property Name="InspectionData" Type="nvarchar(max)" />
+          <Property Name="PropertyData" Type="nvarchar(max)" />
+          <Property Name="CtrlCode" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifyDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SerialHist">
+          <Key>
+            <PropertyRef Name="SerialHistID" />
+          </Key>
+          <Property Name="SerialHistID" Type="int" Nullable="false" />
+          <Property Name="SerialID" Type="int" />
+          <Property Name="PartID" Type="int" />
+          <Property Name="InspectionData" Type="nvarchar(max)" />
+          <Property Name="PropertyData" Type="nvarchar(max)" />
+          <Property Name="CheckCode" Type="int" />
+          <Property Name="CtrlCode" Type="int" />
+          <Property Name="SourceName" Type="nvarchar" MaxLength="50" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifyDate" Type="datetime" />
+        </EntityType>
+        <!--產生期間發現錯誤:
+警告 6002: 資料表/檢視 'MESSNDB.dbo.vPartCoding' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。-->
+        <EntityType Name="vPartCoding">
+          <Key>
+            <PropertyRef Name="PartCodingID" />
+          </Key>
+          <Property Name="PartCodingID" Type="int" Nullable="false" />
+          <Property Name="PartID" Type="int" />
+          <Property Name="FactID" Type="nvarchar" MaxLength="5" />
+          <Property Name="PartNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="PartDesc" Type="nvarchar" MaxLength="200" />
+          <Property Name="SerialType" Type="int" />
+          <Property Name="CodingRule" Type="nvarchar" MaxLength="50" />
+          <Property Name="CtrlCode" Type="int" />
+          <Property Name="PartCtrlCode" Type="int" />
+        </EntityType>
+        <!--產生期間發現錯誤:
+警告 6002: 資料表/檢視 'MESSNDB.dbo.vPartMast' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。-->
+        <EntityType Name="vPartMast">
+          <Key>
+            <PropertyRef Name="PartID" />
+          </Key>
+          <Property Name="PartID" Type="int" Nullable="false" />
+          <Property Name="FactID" Type="nvarchar" MaxLength="5" />
+          <Property Name="PartNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="PartDesc" Type="nvarchar" MaxLength="200" />
+          <Property Name="SerialType" Type="int" />
+          <Property Name="CtrlCode" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifyDate" Type="datetime" />
+          <Property Name="IsAutoPass" Type="int" />
+          <Property Name="IsAutoPassValue" Type="int" />
+          <Property Name="IsFromMESSN" Type="int" />
+          <Property Name="IsFromMESSNValue" Type="int" />
+          <Property Name="IsFromInspection" Type="int" />
+          <Property Name="IsFromInspectionValue" Type="int" />
+          <Property Name="IsFromEP" Type="int" />
+          <Property Name="IsFromEPValue" Type="int" />
+          <Property Name="IsAllowCoding" Type="int" />
+          <Property Name="IsAllowCodingValue" Type="int" />
+        </EntityType>
+        <!--產生期間發現錯誤:
+警告 6002: 資料表/檢視 'MESSNDB.dbo.vSerialData' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。-->
+        <EntityType Name="vSerialData">
+          <Key>
+            <PropertyRef Name="SerialID" />
+          </Key>
+          <Property Name="SerialID" Type="int" Nullable="false" />
+          <Property Name="SerialNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="PartID" Type="int" />
+          <Property Name="InspectionData" Type="nvarchar(max)" />
+          <Property Name="PropertyData" Type="nvarchar(max)" />
+          <Property Name="CtrlCode" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifyDate" Type="datetime" />
+          <Property Name="FactID" Type="nvarchar" MaxLength="5" />
+          <Property Name="PartNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="PartDesc" Type="nvarchar" MaxLength="200" />
+          <Property Name="SerialType" Type="int" />
+          <Property Name="PartCtrlCode" Type="int" />
+        </EntityType>
+        <EntityContainer Name="MESSNDBModelStoreContainer">
+          <EntitySet Name="CodeMast" EntityType="Self.CodeMast" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PartCoding" EntityType="Self.PartCoding" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PartMast" EntityType="Self.PartMast" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SctlMast" EntityType="Self.SctlMast" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SerialData" EntityType="Self.SerialData" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SerialHist" EntityType="Self.SerialHist" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="vPartCoding" EntityType="Self.vPartCoding" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [vPartCoding].[PartCodingID] AS [PartCodingID], 
+    [vPartCoding].[PartID] AS [PartID], 
+    [vPartCoding].[FactID] AS [FactID], 
+    [vPartCoding].[PartNo] AS [PartNo], 
+    [vPartCoding].[PartDesc] AS [PartDesc], 
+    [vPartCoding].[SerialType] AS [SerialType], 
+    [vPartCoding].[CodingRule] AS [CodingRule], 
+    [vPartCoding].[CtrlCode] AS [CtrlCode], 
+    [vPartCoding].[PartCtrlCode] AS [PartCtrlCode]
+    FROM [dbo].[vPartCoding] AS [vPartCoding]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vPartMast" EntityType="Self.vPartMast" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [vPartMast].[PartID] AS [PartID], 
+    [vPartMast].[FactID] AS [FactID], 
+    [vPartMast].[PartNo] AS [PartNo], 
+    [vPartMast].[PartDesc] AS [PartDesc], 
+    [vPartMast].[SerialType] AS [SerialType], 
+    [vPartMast].[CtrlCode] AS [CtrlCode], 
+    [vPartMast].[CreatedDate] AS [CreatedDate], 
+    [vPartMast].[ModifyDate] AS [ModifyDate], 
+    [vPartMast].[IsAutoPass] AS [IsAutoPass], 
+    [vPartMast].[IsAutoPassValue] AS [IsAutoPassValue], 
+    [vPartMast].[IsFromMESSN] AS [IsFromMESSN], 
+    [vPartMast].[IsFromMESSNValue] AS [IsFromMESSNValue], 
+    [vPartMast].[IsFromInspection] AS [IsFromInspection], 
+    [vPartMast].[IsFromInspectionValue] AS [IsFromInspectionValue], 
+    [vPartMast].[IsFromEP] AS [IsFromEP], 
+    [vPartMast].[IsFromEPValue] AS [IsFromEPValue], 
+    [vPartMast].[IsAllowCoding] AS [IsAllowCoding], 
+    [vPartMast].[IsAllowCodingValue] AS [IsAllowCodingValue]
+    FROM [dbo].[vPartMast] AS [vPartMast]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vSerialData" EntityType="Self.vSerialData" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [vSerialData].[SerialID] AS [SerialID], 
+    [vSerialData].[SerialNo] AS [SerialNo], 
+    [vSerialData].[PartID] AS [PartID], 
+    [vSerialData].[InspectionData] AS [InspectionData], 
+    [vSerialData].[PropertyData] AS [PropertyData], 
+    [vSerialData].[CtrlCode] AS [CtrlCode], 
+    [vSerialData].[CreatedDate] AS [CreatedDate], 
+    [vSerialData].[ModifyDate] AS [ModifyDate], 
+    [vSerialData].[FactID] AS [FactID], 
+    [vSerialData].[PartNo] AS [PartNo], 
+    [vSerialData].[PartDesc] AS [PartDesc], 
+    [vSerialData].[SerialType] AS [SerialType], 
+    [vSerialData].[PartCtrlCode] AS [PartCtrlCode]
+    FROM [dbo].[vSerialData] AS [vSerialData]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MESSNDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CodeMast">
+          <Key>
+            <PropertyRef Name="CodeKey" />
+          </Key>
+          <Property Name="CodeKey" Type="Int32" Nullable="false" />
+          <Property Name="CodeID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CodeDesc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CodeComment" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="PartCoding">
+          <Key>
+            <PropertyRef Name="PartCodingID" />
+          </Key>
+          <Property Name="PartCodingID" Type="Int32" Nullable="false" />
+          <Property Name="PartID" Type="Int32" />
+          <Property Name="CodingRule" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CtrlCode" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="PartMast">
+          <Key>
+            <PropertyRef Name="PartID" />
+          </Key>
+          <Property Name="PartID" Type="Int32" Nullable="false" />
+          <Property Name="FactID" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="PartNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PartDesc" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SerialType" Type="Int32" />
+          <Property Name="CtrlCode" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="SctlMast">
+          <Key>
+            <PropertyRef Name="ScrmKey" />
+          </Key>
+          <Property Name="ScrmKey" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ScrmDesc" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="LastNo" Type="Decimal" Precision="18" Scale="4" />
+          <Property Name="LastDateTime" Type="DateTime" Precision="3" />
+          <Property Name="CtrlCode" Type="Int32" />
+          <Property Name="CtrlString" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="SerialData">
+          <Key>
+            <PropertyRef Name="SerialID" />
+          </Key>
+          <Property Name="SerialID" Type="Int32" Nullable="false" />
+          <Property Name="SerialNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PartID" Type="Int32" />
+          <Property Name="InspectionData" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PropertyData" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CtrlCode" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="SerialHist">
+          <Key>
+            <PropertyRef Name="SerialHistID" />
+          </Key>
+          <Property Name="SerialHistID" Type="Int32" Nullable="false" />
+          <Property Name="SerialID" Type="Int32" />
+          <Property Name="PartID" Type="Int32" />
+          <Property Name="InspectionData" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PropertyData" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CheckCode" Type="Int32" />
+          <Property Name="CtrlCode" Type="Int32" />
+          <Property Name="SourceName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="vPartCoding">
+          <Key>
+            <PropertyRef Name="PartCodingID" />
+          </Key>
+          <Property Name="PartCodingID" Type="Int32" Nullable="false" />
+          <Property Name="PartID" Type="Int32" />
+          <Property Name="FactID" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="PartNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PartDesc" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SerialType" Type="Int32" />
+          <Property Name="CodingRule" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CtrlCode" Type="Int32" />
+          <Property Name="PartCtrlCode" Type="Int32" />
+        </EntityType>
+        <EntityType Name="vPartMast">
+          <Key>
+            <PropertyRef Name="PartID" />
+          </Key>
+          <Property Name="PartID" Type="Int32" Nullable="false" />
+          <Property Name="FactID" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="PartNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PartDesc" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SerialType" Type="Int32" />
+          <Property Name="CtrlCode" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+          <Property Name="IsAutoPass" Type="Int32" />
+          <Property Name="IsAutoPassValue" Type="Int32" />
+          <Property Name="IsFromMESSN" Type="Int32" />
+          <Property Name="IsFromMESSNValue" Type="Int32" />
+          <Property Name="IsFromInspection" Type="Int32" />
+          <Property Name="IsFromInspectionValue" Type="Int32" />
+          <Property Name="IsFromEP" Type="Int32" />
+          <Property Name="IsFromEPValue" Type="Int32" />
+          <Property Name="IsAllowCoding" Type="Int32" />
+          <Property Name="IsAllowCodingValue" Type="Int32" />
+        </EntityType>
+        <EntityType Name="vSerialData">
+          <Key>
+            <PropertyRef Name="SerialID" />
+          </Key>
+          <Property Name="SerialID" Type="Int32" Nullable="false" />
+          <Property Name="SerialNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PartID" Type="Int32" />
+          <Property Name="InspectionData" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PropertyData" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CtrlCode" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+          <Property Name="FactID" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="PartNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PartDesc" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SerialType" Type="Int32" />
+          <Property Name="PartCtrlCode" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="MESSNDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CodeMast" EntityType="Self.CodeMast" />
+          <EntitySet Name="PartCoding" EntityType="Self.PartCoding" />
+          <EntitySet Name="PartMast" EntityType="Self.PartMast" />
+          <EntitySet Name="SctlMast" EntityType="Self.SctlMast" />
+          <EntitySet Name="SerialData" EntityType="Self.SerialData" />
+          <EntitySet Name="SerialHist" EntityType="Self.SerialHist" />
+          <EntitySet Name="vPartCoding" EntityType="Self.vPartCoding" />
+          <EntitySet Name="vPartMast" EntityType="Self.vPartMast" />
+          <EntitySet Name="vSerialData" EntityType="Self.vSerialData" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MESSNDBModelStoreContainer" CdmEntityContainer="MESSNDBEntities">
+          <EntitySetMapping Name="CodeMast">
+            <EntityTypeMapping TypeName="MESSNDBModel.CodeMast">
+              <MappingFragment StoreEntitySet="CodeMast">
+                <ScalarProperty Name="CodeKey" ColumnName="CodeKey" />
+                <ScalarProperty Name="CodeID" ColumnName="CodeID" />
+                <ScalarProperty Name="CodeDesc" ColumnName="CodeDesc" />
+                <ScalarProperty Name="CodeComment" ColumnName="CodeComment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PartCoding">
+            <EntityTypeMapping TypeName="MESSNDBModel.PartCoding">
+              <MappingFragment StoreEntitySet="PartCoding">
+                <ScalarProperty Name="PartCodingID" ColumnName="PartCodingID" />
+                <ScalarProperty Name="PartID" ColumnName="PartID" />
+                <ScalarProperty Name="CodingRule" ColumnName="CodingRule" />
+                <ScalarProperty Name="CtrlCode" ColumnName="CtrlCode" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PartMast">
+            <EntityTypeMapping TypeName="MESSNDBModel.PartMast">
+              <MappingFragment StoreEntitySet="PartMast">
+                <ScalarProperty Name="PartID" ColumnName="PartID" />
+                <ScalarProperty Name="FactID" ColumnName="FactID" />
+                <ScalarProperty Name="PartNo" ColumnName="PartNo" />
+                <ScalarProperty Name="PartDesc" ColumnName="PartDesc" />
+                <ScalarProperty Name="SerialType" ColumnName="SerialType" />
+                <ScalarProperty Name="CtrlCode" ColumnName="CtrlCode" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SctlMast">
+            <EntityTypeMapping TypeName="MESSNDBModel.SctlMast">
+              <MappingFragment StoreEntitySet="SctlMast">
+                <ScalarProperty Name="ScrmKey" ColumnName="ScrmKey" />
+                <ScalarProperty Name="ScrmDesc" ColumnName="ScrmDesc" />
+                <ScalarProperty Name="LastNo" ColumnName="LastNo" />
+                <ScalarProperty Name="LastDateTime" ColumnName="LastDateTime" />
+                <ScalarProperty Name="CtrlCode" ColumnName="CtrlCode" />
+                <ScalarProperty Name="CtrlString" ColumnName="CtrlString" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SerialData">
+            <EntityTypeMapping TypeName="MESSNDBModel.SerialData">
+              <MappingFragment StoreEntitySet="SerialData">
+                <ScalarProperty Name="SerialID" ColumnName="SerialID" />
+                <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+                <ScalarProperty Name="PartID" ColumnName="PartID" />
+                <ScalarProperty Name="InspectionData" ColumnName="InspectionData" />
+                <ScalarProperty Name="PropertyData" ColumnName="PropertyData" />
+                <ScalarProperty Name="CtrlCode" ColumnName="CtrlCode" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SerialHist">
+            <EntityTypeMapping TypeName="MESSNDBModel.SerialHist">
+              <MappingFragment StoreEntitySet="SerialHist">
+                <ScalarProperty Name="SerialHistID" ColumnName="SerialHistID" />
+                <ScalarProperty Name="SerialID" ColumnName="SerialID" />
+                <ScalarProperty Name="PartID" ColumnName="PartID" />
+                <ScalarProperty Name="InspectionData" ColumnName="InspectionData" />
+                <ScalarProperty Name="PropertyData" ColumnName="PropertyData" />
+                <ScalarProperty Name="CheckCode" ColumnName="CheckCode" />
+                <ScalarProperty Name="CtrlCode" ColumnName="CtrlCode" />
+                <ScalarProperty Name="SourceName" ColumnName="SourceName" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vPartCoding">
+            <EntityTypeMapping TypeName="MESSNDBModel.vPartCoding">
+              <MappingFragment StoreEntitySet="vPartCoding">
+                <ScalarProperty Name="PartCodingID" ColumnName="PartCodingID" />
+                <ScalarProperty Name="PartID" ColumnName="PartID" />
+                <ScalarProperty Name="FactID" ColumnName="FactID" />
+                <ScalarProperty Name="PartNo" ColumnName="PartNo" />
+                <ScalarProperty Name="PartDesc" ColumnName="PartDesc" />
+                <ScalarProperty Name="SerialType" ColumnName="SerialType" />
+                <ScalarProperty Name="CodingRule" ColumnName="CodingRule" />
+                <ScalarProperty Name="CtrlCode" ColumnName="CtrlCode" />
+                <ScalarProperty Name="PartCtrlCode" ColumnName="PartCtrlCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vPartMast">
+            <EntityTypeMapping TypeName="MESSNDBModel.vPartMast">
+              <MappingFragment StoreEntitySet="vPartMast">
+                <ScalarProperty Name="PartID" ColumnName="PartID" />
+                <ScalarProperty Name="FactID" ColumnName="FactID" />
+                <ScalarProperty Name="PartNo" ColumnName="PartNo" />
+                <ScalarProperty Name="PartDesc" ColumnName="PartDesc" />
+                <ScalarProperty Name="SerialType" ColumnName="SerialType" />
+                <ScalarProperty Name="CtrlCode" ColumnName="CtrlCode" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+                <ScalarProperty Name="IsAutoPass" ColumnName="IsAutoPass" />
+                <ScalarProperty Name="IsAutoPassValue" ColumnName="IsAutoPassValue" />
+                <ScalarProperty Name="IsFromMESSN" ColumnName="IsFromMESSN" />
+                <ScalarProperty Name="IsFromMESSNValue" ColumnName="IsFromMESSNValue" />
+                <ScalarProperty Name="IsFromInspection" ColumnName="IsFromInspection" />
+                <ScalarProperty Name="IsFromInspectionValue" ColumnName="IsFromInspectionValue" />
+                <ScalarProperty Name="IsFromEP" ColumnName="IsFromEP" />
+                <ScalarProperty Name="IsFromEPValue" ColumnName="IsFromEPValue" />
+                <ScalarProperty Name="IsAllowCoding" ColumnName="IsAllowCoding" />
+                <ScalarProperty Name="IsAllowCodingValue" ColumnName="IsAllowCodingValue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vSerialData">
+            <EntityTypeMapping TypeName="MESSNDBModel.vSerialData">
+              <MappingFragment StoreEntitySet="vSerialData">
+                <ScalarProperty Name="SerialID" ColumnName="SerialID" />
+                <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+                <ScalarProperty Name="PartID" ColumnName="PartID" />
+                <ScalarProperty Name="InspectionData" ColumnName="InspectionData" />
+                <ScalarProperty Name="PropertyData" ColumnName="PropertyData" />
+                <ScalarProperty Name="CtrlCode" ColumnName="CtrlCode" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+                <ScalarProperty Name="FactID" ColumnName="FactID" />
+                <ScalarProperty Name="PartNo" ColumnName="PartNo" />
+                <ScalarProperty Name="PartDesc" ColumnName="PartDesc" />
+                <ScalarProperty Name="SerialType" ColumnName="SerialType" />
+                <ScalarProperty Name="PartCtrlCode" ColumnName="PartCtrlCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="無" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

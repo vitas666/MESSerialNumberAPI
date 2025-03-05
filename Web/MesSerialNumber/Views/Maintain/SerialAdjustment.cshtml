@@ -1,0 +1,62 @@
+﻿@using MesSerialNumber.Constant;
+
+@{
+    ViewBag.Title = "Serial Modify";
+}
+
+@section scripts {
+    <script src="@Url.Content("~/Scripts/Maintain/SerialAdjustment.js?UpdateDateTime="+HttpContext.Current.Session[Common.UPDATEDATETIME])" type="text/javascript"></script>
+}
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="~/Scripts/Shared/Common.js" type="text/javascript"></script>
+    <script src="~/Scripts/bootstrap.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap-theme.min.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="form-inline">
+                <div class="col-sm-6 col-xs-6 col-md-6">
+                    <label for="SerialNo" style="width: 15%;" id="SerialNoLabel"></label>
+                    <input type="text" class="form-control" id="SerialNo" style="width: 80%;">
+                </div>
+                <div class="col-sm-6 col-xs-6 col-md-6">
+                    <button id="Search" type="button" class="btn btn-default"></button>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row display-none" id="AdjustmentDiv">
+            <div class="form-inline">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6 col-md-6">
+                        <label for="SearchSerialNo" style="width: 15%;" id="SearchSerialNoLabel"></label>
+                        <sapn class="form-control" id="SearchSerialNo" style="width: 80%;" ></sapn>
+                       @* <input type="text" class="form-control" id="SearchSerialNo" style="width: 80%;" readonly>*@
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6 col-md-6">
+                        <label for="PartNo" style="width: 15%;" id="PartNoLabel"></label>
+                        <input type="text" class="form-control" id="PartNo" style="width: 80%;">
+                    </div>
+                    <div class="col-sm-6 col-xs-6 col-md-6">
+                        <input type="checkbox" class="form-control form-group" id="isValid" style="margin:0; margin-top:-4px;">
+                        <label for="isValid" id="QualifiedLabel"></label>
+                    </div>
+                    <div class="col-sm-12 col-xs-12 col-md-12">
+                        <button id="Save" type="button" class="btn btn-default"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

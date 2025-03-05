@@ -1,0 +1,81 @@
+﻿@using MesSerialNumber.Constant;
+
+@{
+    ViewBag.Title = "Serial Upload";
+}
+
+@section scripts {
+    <script src="@Url.Content("~/Scripts/Maintain/UploadSerial.js?UpdateDateTime="+HttpContext.Current.Session[Common.UPDATEDATETIME])" type="text/javascript"></script>
+}
+
+<script src="~/Scripts/Shared/Common.js" type="text/javascript"></script>
+<link rel="stylesheet" href="~/Content/bootstrap-icons.css">
+<style>
+#result {
+    width: 90%;
+    margin: 15px;
+    padding: 15px;
+    background-color: lightslategray;
+    color: #f6f6f6;
+    box-sizing: border-box;
+}
+.css-table-padding { padding: 0 24px; width: 100%; box-sizing: border-box; }
+.css-table { width: 100%; border-collapse: collapse; margin-top: 5px; }
+.css-tr { display: table-row; }
+.css-td { display: table-cell; border: 1px solid #fff; padding:5px; }
+.form-group { margin-top: 10px; }
+</style>
+
+<div class="container" style="width:100%;">
+    <div class="form-group">
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="CsvFile" id="UploadCsvLabel"></label>
+            <input type="file" class="form-control" id="CsvFile" accept=".csv" required>
+            <button type="button" id="Upload" class="btn btn-primary"></button>
+        </form>
+    </div>
+
+    <div id="result">
+        <div class="result-context"><label id="InsertSuccess"></label></div>
+        <div class="result-context"><label id="UpdateSuccess"></label></div>
+        <div class="result-context">
+            <label id="InsertFailed"></label>
+            <span id="insert-toggle-button" class="toggle-button" data-type="insert"><i id="insert-toggle-icon" class="bi bi-caret-down-fill"></i></span>
+            <div class="css-table-padding">
+                <div class="css-table insert-fail-table display-none">
+                    <div class="css-tr">
+                        <div class="css-td SerialNo"></div>
+                        <div class="css-td PartNo"></div>
+                        <div class="css-td Reason"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="result-context">
+            <label id="UpdateFailed"></label>
+            <span id="update-toggle-button" class="toggle-button" data-type="update"><i id="update-toggle-icon" class="bi bi-caret-down-fill"></i></span>
+            <div class="css-table-padding">
+                <div class="css-table update-fail-table display-none">
+                    <div class="css-tr">
+                        <div class="css-td SerialNo"></div>
+                        <div class="css-td PartNo"></div>
+                        <div class="css-td Reason"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="result-context">
+            <label id="IncorrectData"></label>
+            <span id="exception-toggle-button" class="toggle-button" data-type="exception"><i id="exception-toggle-icon" class="bi bi-caret-down-fill"></i></span>
+            <div class="css-table-padding">
+                <div class="css-table exception-fail-table display-none">
+                    <div class="css-tr">
+                        <div class="css-td SerialNo"></div>
+                        <div class="css-td PartNo"></div>
+                        <div class="css-td Reason"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

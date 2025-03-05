@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="CiMESDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="MES_MMS_MAT">
+          <Key>
+            <PropertyRef Name="MMS_MAT_SID" />
+          </Key>
+          <Property Name="MMS_MAT_SID" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="MATERIALNO" Type="nvarchar" MaxLength="200" />
+          <Property Name="MATERIALNAME" Type="nvarchar" MaxLength="4000" />
+          <Property Name="SPEC" Type="nvarchar" MaxLength="4000" />
+          <Property Name="MMS_TYPE_SID" Type="nvarchar" MaxLength="200" />
+          <Property Name="TYPE" Type="nvarchar" MaxLength="200" />
+          <Property Name="UNIT" Type="nvarchar" MaxLength="200" />
+          <Property Name="SUNIT" Type="nvarchar" MaxLength="200" />
+          <Property Name="SAFEQTY" Type="numeric" Precision="13" Scale="5" />
+          <Property Name="ENDQTY" Type="numeric" Precision="13" Scale="5" />
+          <Property Name="CONSUMEFLAG" Type="nvarchar" MaxLength="200" />
+          <Property Name="COMPMANAGE" Type="nvarchar" MaxLength="200" />
+          <Property Name="QTYCONSUMETYPE" Type="nvarchar" MaxLength="200" />
+          <Property Name="UPLOADTYPE" Type="nvarchar" MaxLength="200" />
+          <Property Name="WTIME" Type="numeric" Precision="13" Scale="5" />
+          <Property Name="QTIME" Type="numeric" Precision="13" Scale="5" />
+          <Property Name="STATUS" Type="nvarchar" MaxLength="200" />
+          <Property Name="ACTIVEFLAG" Type="char" MaxLength="1" />
+          <Property Name="TAG" Type="float" />
+          <Property Name="USERID" Type="nvarchar" MaxLength="200" />
+          <Property Name="UPDATETIME" Type="nvarchar" MaxLength="200" />
+          <Property Name="CATEGORY" Type="nvarchar" MaxLength="200" />
+          <Property Name="USETYPE" Type="nvarchar" MaxLength="200" />
+          <Property Name="VALIDTYPE" Type="nvarchar" MaxLength="200" />
+          <Property Name="ISHAVEKEYPART" Type="char" MaxLength="1" />
+          <Property Name="CREATEMLOTTYPE" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="RECEIVEBYWOFLAG" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="ISSUEGROUP" Type="nvarchar" MaxLength="100" />
+          <Property Name="USERDEFINECOL01" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL02" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL03" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL04" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL05" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL06" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL07" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL08" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL09" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL10" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL11" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL12" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL13" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL14" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL15" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL16" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL17" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL18" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL19" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL20" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL21" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL22" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL23" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL24" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL25" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL26" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL27" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL28" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL29" Type="nvarchar" MaxLength="200" />
+          <Property Name="USERDEFINECOL30" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <!--產生期間發現錯誤:
+警告 6002: 資料表/檢視 'CiMESDB.dbo.vSerialCustPartNo' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。-->
+        <EntityType Name="vSerialCustPartNo">
+          <Key>
+            <PropertyRef Name="OrderNo" />
+            <PropertyRef Name="SONo" />
+            <PropertyRef Name="SOItem" />
+            <PropertyRef Name="CustID" />
+            <PropertyRef Name="CustPartNo" />
+          </Key>
+          <Property Name="SerialNo" Type="nvarchar" MaxLength="200" />
+          <Property Name="OrderNo" Type="nvarchar" MaxLength="12" Nullable="false" />
+          <Property Name="SONo" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="SOItem" Type="nvarchar" MaxLength="6" Nullable="false" />
+          <Property Name="CustID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CustPartNo" Type="nvarchar" MaxLength="35" Nullable="false" />
+          <Property Name="PartNo" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <!--產生期間發現錯誤:
+警告 6002: 資料表/檢視 'CiMESDB.dbo.vWOBOM' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。-->
+        <EntityType Name="vWOBOM">
+          <Key>
+            <PropertyRef Name="WOMatnr" />
+          </Key>
+          <Property Name="AUFNR" Type="nvarchar" MaxLength="100" />
+          <Property Name="MATNR" Type="nvarchar" MaxLength="200" />
+          <Property Name="WOMatnr" Type="varchar" MaxLength="1" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="CiMESDBModelStoreContainer">
+          <EntitySet Name="MES_MMS_MAT" EntityType="Self.MES_MMS_MAT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="vSerialCustPartNo" EntityType="Self.vSerialCustPartNo" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [vSerialCustPartNo].[SerialNo] AS [SerialNo], 
+    [vSerialCustPartNo].[OrderNo] AS [OrderNo], 
+    [vSerialCustPartNo].[SONo] AS [SONo], 
+    [vSerialCustPartNo].[SOItem] AS [SOItem], 
+    [vSerialCustPartNo].[CustID] AS [CustID], 
+    [vSerialCustPartNo].[CustPartNo] AS [CustPartNo], 
+    [vSerialCustPartNo].[PartNo] AS [PartNo]
+    FROM [dbo].[vSerialCustPartNo] AS [vSerialCustPartNo]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vWOBOM" EntityType="Self.vWOBOM" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [vWOBOM].[AUFNR] AS [AUFNR], 
+    [vWOBOM].[MATNR] AS [MATNR], 
+    [vWOBOM].[WOMatnr] AS [WOMatnr]
+    FROM [dbo].[vWOBOM] AS [vWOBOM]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CiMESDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="MES_MMS_MAT">
+          <Key>
+            <PropertyRef Name="MMS_MAT_SID" />
+          </Key>
+          <Property Name="MMS_MAT_SID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MATERIALNO" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="MATERIALNAME" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="SPEC" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="MMS_TYPE_SID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="TYPE" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="UNIT" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SUNIT" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SAFEQTY" Type="Decimal" Precision="13" Scale="5" />
+          <Property Name="ENDQTY" Type="Decimal" Precision="13" Scale="5" />
+          <Property Name="CONSUMEFLAG" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="COMPMANAGE" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="QTYCONSUMETYPE" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="UPLOADTYPE" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="WTIME" Type="Decimal" Precision="13" Scale="5" />
+          <Property Name="QTIME" Type="Decimal" Precision="13" Scale="5" />
+          <Property Name="STATUS" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="ACTIVEFLAG" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="TAG" Type="Double" />
+          <Property Name="USERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="UPDATETIME" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="CATEGORY" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USETYPE" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="VALIDTYPE" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="ISHAVEKEYPART" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="CREATEMLOTTYPE" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RECEIVEBYWOFLAG" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ISSUEGROUP" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL01" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL02" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL03" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL04" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL05" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL06" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL07" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL08" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL09" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL10" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL11" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL12" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL13" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL14" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL15" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL16" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL17" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL18" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL19" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL20" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL21" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL22" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL23" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL24" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL25" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL26" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL27" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL28" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL29" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="USERDEFINECOL30" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="vSerialCustPartNo">
+          <Key>
+            <PropertyRef Name="OrderNo" />
+            <PropertyRef Name="SONo" />
+            <PropertyRef Name="SOItem" />
+            <PropertyRef Name="CustID" />
+            <PropertyRef Name="CustPartNo" />
+          </Key>
+          <Property Name="SerialNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="OrderNo" Type="String" MaxLength="12" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SONo" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SOItem" Type="String" MaxLength="6" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CustID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CustPartNo" Type="String" MaxLength="35" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PartNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="CiMESDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="MES_MMS_MAT" EntityType="Self.MES_MMS_MAT" />
+          <EntitySet Name="vSerialCustPartNo" EntityType="Self.vSerialCustPartNo" />
+          <EntitySet Name="vWOBOM" EntityType="CiMESDBModel.vWOBOM" />
+        </EntityContainer>
+        <EntityType Name="vWOBOM">
+          <Key>
+            <PropertyRef Name="WOMatnr" />
+          </Key>
+          <Property Name="AUFNR" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MATNR" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="WOMatnr" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CiMESDBModelStoreContainer" CdmEntityContainer="CiMESDBEntities">
+          <EntitySetMapping Name="MES_MMS_MAT">
+            <EntityTypeMapping TypeName="CiMESDBModel.MES_MMS_MAT">
+              <MappingFragment StoreEntitySet="MES_MMS_MAT">
+                <ScalarProperty Name="MMS_MAT_SID" ColumnName="MMS_MAT_SID" />
+                <ScalarProperty Name="MATERIALNO" ColumnName="MATERIALNO" />
+                <ScalarProperty Name="MATERIALNAME" ColumnName="MATERIALNAME" />
+                <ScalarProperty Name="SPEC" ColumnName="SPEC" />
+                <ScalarProperty Name="MMS_TYPE_SID" ColumnName="MMS_TYPE_SID" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="UNIT" ColumnName="UNIT" />
+                <ScalarProperty Name="SUNIT" ColumnName="SUNIT" />
+                <ScalarProperty Name="SAFEQTY" ColumnName="SAFEQTY" />
+                <ScalarProperty Name="ENDQTY" ColumnName="ENDQTY" />
+                <ScalarProperty Name="CONSUMEFLAG" ColumnName="CONSUMEFLAG" />
+                <ScalarProperty Name="COMPMANAGE" ColumnName="COMPMANAGE" />
+                <ScalarProperty Name="QTYCONSUMETYPE" ColumnName="QTYCONSUMETYPE" />
+                <ScalarProperty Name="UPLOADTYPE" ColumnName="UPLOADTYPE" />
+                <ScalarProperty Name="WTIME" ColumnName="WTIME" />
+                <ScalarProperty Name="QTIME" ColumnName="QTIME" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="ACTIVEFLAG" ColumnName="ACTIVEFLAG" />
+                <ScalarProperty Name="TAG" ColumnName="TAG" />
+                <ScalarProperty Name="USERID" ColumnName="USERID" />
+                <ScalarProperty Name="UPDATETIME" ColumnName="UPDATETIME" />
+                <ScalarProperty Name="CATEGORY" ColumnName="CATEGORY" />
+                <ScalarProperty Name="USETYPE" ColumnName="USETYPE" />
+                <ScalarProperty Name="VALIDTYPE" ColumnName="VALIDTYPE" />
+                <ScalarProperty Name="ISHAVEKEYPART" ColumnName="ISHAVEKEYPART" />
+                <ScalarProperty Name="CREATEMLOTTYPE" ColumnName="CREATEMLOTTYPE" />
+                <ScalarProperty Name="RECEIVEBYWOFLAG" ColumnName="RECEIVEBYWOFLAG" />
+                <ScalarProperty Name="ISSUEGROUP" ColumnName="ISSUEGROUP" />
+                <ScalarProperty Name="USERDEFINECOL01" ColumnName="USERDEFINECOL01" />
+                <ScalarProperty Name="USERDEFINECOL02" ColumnName="USERDEFINECOL02" />
+                <ScalarProperty Name="USERDEFINECOL03" ColumnName="USERDEFINECOL03" />
+                <ScalarProperty Name="USERDEFINECOL04" ColumnName="USERDEFINECOL04" />
+                <ScalarProperty Name="USERDEFINECOL05" ColumnName="USERDEFINECOL05" />
+                <ScalarProperty Name="USERDEFINECOL06" ColumnName="USERDEFINECOL06" />
+                <ScalarProperty Name="USERDEFINECOL07" ColumnName="USERDEFINECOL07" />
+                <ScalarProperty Name="USERDEFINECOL08" ColumnName="USERDEFINECOL08" />
+                <ScalarProperty Name="USERDEFINECOL09" ColumnName="USERDEFINECOL09" />
+                <ScalarProperty Name="USERDEFINECOL10" ColumnName="USERDEFINECOL10" />
+                <ScalarProperty Name="USERDEFINECOL11" ColumnName="USERDEFINECOL11" />
+                <ScalarProperty Name="USERDEFINECOL12" ColumnName="USERDEFINECOL12" />
+                <ScalarProperty Name="USERDEFINECOL13" ColumnName="USERDEFINECOL13" />
+                <ScalarProperty Name="USERDEFINECOL14" ColumnName="USERDEFINECOL14" />
+                <ScalarProperty Name="USERDEFINECOL15" ColumnName="USERDEFINECOL15" />
+                <ScalarProperty Name="USERDEFINECOL16" ColumnName="USERDEFINECOL16" />
+                <ScalarProperty Name="USERDEFINECOL17" ColumnName="USERDEFINECOL17" />
+                <ScalarProperty Name="USERDEFINECOL18" ColumnName="USERDEFINECOL18" />
+                <ScalarProperty Name="USERDEFINECOL19" ColumnName="USERDEFINECOL19" />
+                <ScalarProperty Name="USERDEFINECOL20" ColumnName="USERDEFINECOL20" />
+                <ScalarProperty Name="USERDEFINECOL21" ColumnName="USERDEFINECOL21" />
+                <ScalarProperty Name="USERDEFINECOL22" ColumnName="USERDEFINECOL22" />
+                <ScalarProperty Name="USERDEFINECOL23" ColumnName="USERDEFINECOL23" />
+                <ScalarProperty Name="USERDEFINECOL24" ColumnName="USERDEFINECOL24" />
+                <ScalarProperty Name="USERDEFINECOL25" ColumnName="USERDEFINECOL25" />
+                <ScalarProperty Name="USERDEFINECOL26" ColumnName="USERDEFINECOL26" />
+                <ScalarProperty Name="USERDEFINECOL27" ColumnName="USERDEFINECOL27" />
+                <ScalarProperty Name="USERDEFINECOL28" ColumnName="USERDEFINECOL28" />
+                <ScalarProperty Name="USERDEFINECOL29" ColumnName="USERDEFINECOL29" />
+                <ScalarProperty Name="USERDEFINECOL30" ColumnName="USERDEFINECOL30" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vSerialCustPartNo">
+            <EntityTypeMapping TypeName="CiMESDBModel.vSerialCustPartNo">
+              <MappingFragment StoreEntitySet="vSerialCustPartNo">
+                <ScalarProperty Name="PartNo" ColumnName="PartNo" />
+                <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+                <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+                <ScalarProperty Name="SONo" ColumnName="SONo" />
+                <ScalarProperty Name="SOItem" ColumnName="SOItem" />
+                <ScalarProperty Name="CustID" ColumnName="CustID" />
+                <ScalarProperty Name="CustPartNo" ColumnName="CustPartNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vWOBOM">
+            <EntityTypeMapping TypeName="CiMESDBModel.vWOBOM">
+              <MappingFragment StoreEntitySet="vWOBOM">
+                <ScalarProperty Name="WOMatnr" ColumnName="WOMatnr" />
+                <ScalarProperty Name="MATNR" ColumnName="MATNR" />
+                <ScalarProperty Name="AUFNR" ColumnName="AUFNR" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="無" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

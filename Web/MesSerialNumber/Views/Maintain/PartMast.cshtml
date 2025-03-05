@@ -1,0 +1,44 @@
+﻿@using WebTemplate.Helper;
+@using System.Configuration;
+@using MesSerialNumber.Constant;
+
+@{
+    ViewBag.Title = "PartMast維護";
+}
+
+@section scripts {
+    <script src="@Url.Content("~/Scripts/Maintain/PartMast.js?UpdateDateTime="+HttpContext.Current.Session[Common.UPDATEDATETIME])" type="text/javascript"></script>
+}
+
+<style>
+    thead {
+        top: 0;
+        position: sticky;
+        background: #dedede;
+    }
+
+    .PartMastGrid .GridContainer {
+        overflow: auto;
+        height: 50vh;
+    }
+
+    .PartCodingGrid .GridContainer {
+        overflow: auto;
+        height: 20vh;
+    }
+</style>
+
+<div class="container" style="width:100%;">
+    <div id="PartMastGrid">
+        @{
+            ViewHelper.RenderGridEdit(this, this.ViewBag.PageComponents["PartMast"]);
+        }
+    </div>
+    <div id="PartCodingGrid" style="margin-top: 10px">
+        @{
+            ViewHelper.RenderGridEdit(this, this.ViewBag.PageComponents["PartCoding"]);
+            if (this.ViewBag.cacheCtrl != null) { ((Giant.ACC2.CacheCtrl)this.ViewBag.cacheCtrl).Dispose(); }
+        }
+    </div>
+</div>
+

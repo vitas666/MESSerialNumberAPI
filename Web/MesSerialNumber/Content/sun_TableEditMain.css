@@ -1,0 +1,3384 @@
+﻿UNKNOWN
+{
+	background-color: white
+}
+BODY
+{
+    font-size: 0.95em;
+    font-family: Arial, 新細明體,Verdana, Sans-Serif;
+    margin-left: 0px;
+    background-color: #FFFFFF;
+    /*
+    */
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    overflow: auto;
+}
+
+BR
+{
+    mso-data-placement:same-cell;
+}
+
+TABLE.DataEdit
+{
+	clear:left;
+	border-left: 1px solid #BBBBBB;
+	border-top: 1px solid #999999;
+	border-right: 1px solid #BBBBBB;
+	border-bottom: 1px solid #999999;
+	--font-weight: lighter;
+	font-size: 0.95em;
+	border-collapse: collapse;
+	-moz-user-select: none;
+	border-spacing: 0px;
+	--background-color:highlight;
+	table-layout: fixed;
+}
+TABLE.DataEdit .Title
+{
+	border-right: 1px solid #808080;
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+	border-bottom: 1px solid red;
+	background-color:#e0e0e0;
+}
+TABLE.DataEdit CAPTION
+{
+	border-right: 1pt solid;
+	border-top: 1pt solid white;
+	border-left: 1pt solid white;
+	border-bottom: 1pt solid;
+}
+TABLE.DataEdit TD
+{
+	border-left: 1px dotted #BBBBBB;
+	border-top: 1px dotted #BBBBBB;
+	border-right: 1px dotted #BBBBBB;
+	border-bottom: 1px dotted #BBBBBB;
+	padding-left:2px;
+	/*padding-top:2px;*/
+	padding-right:1px;
+	padding-bottom:0px;
+	/*margin:0px 0px 0px 0px;*/
+	mso-data-placement:same-cell;
+	white-space: pre; /* pre-wrap */
+	border-spacing: 0px;
+}
+TABLE.DataEdit COL.Highlight
+{
+	color:highlighttext;/* COL color not supported by CSS*/
+	background-color:Highlight;/**/
+	--opacity:1;
+}
+TABLE.DataEdit THEAD
+{
+	border-left: 0px solid white;
+	border-top: 0px solid white;
+	border-right: 1px solid #BBBBBB;
+	border-bottom: 1px solid #BBBBBB;
+}
+TABLE.DataEdit THEAD TR TD
+{
+	border-left: 0px solid white;
+	border-top: 0px solid white;
+	border-right: 1px solid #aaaaaa;
+	border-bottom: 1px inset #aaaaaa;
+	--border-left: 1px dotted #BBBBBB;
+	--border-top: 1px dotted #BBBBBB;
+	--border-right: 1px dotted #BBBBBB;
+	--border-bottom: 1px dotted #BBBBBB;
+	vertical-align:middle;
+	padding-left:1px;padding-right:1px;
+	padding-top:2px;padding-bottom:2px;
+	background-color:inherit;
+    white-space:pre-wrap;
+	opacity:1;
+}
+TABLE.DataEdit THEAD TR TD SPAN
+{
+    background-color:inherit;
+    display:inline-block;
+    white-space:pre-wrap;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+TABLE.DataEdit TBODY TR TD
+{
+	--background-color:highlight;
+	opacity:1;
+}
+TABLE.DataEdit TBODY TR TD.RelaAnchor
+{
+    cursor:pointer;
+    text-decoration:underline;
+    color:#003F87;
+}
+/*TABLE.DataEdit TBODY TR:hover
+{
+	background-color:#444444;
+	opacity:0.3;
+}*/
+
+TABLE.DataEdit THEAD TD SPAN
+{
+    overflow: hidden;
+    /*width:100%;
+    height:100%;*/
+}
+/*
+TABLE.DataEdit TR TD:nth-of-type(1)
+{
+    text-align:right;
+}
+
+#_20690 TR TD:nth-of-type(2)
+{
+    background-color:#00ff66;
+    text-align:right;
+}
+TABLE.DataEdit TD[zdtp="1"]
+{
+    text-align:right;
+    background-color:#ff5566;
+}
+*/
+.TreeNode
+{
+	border-right: medium none;
+	PADDING-RIGHT: 0px;
+	border-top: medium none;
+	PADDING-LEFT: 0px;
+	LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	border-left: medium none;
+	WIDTH: 16px;
+	PADDING-TOP: 0px;
+	border-bottom: medium none;
+	TOP: 0px;
+	HEIGHT: 16px
+}
+
+.tvlastnode
+{
+	BACKGROUND-POSITION: left center;
+	BACKGROUND-IMAGE: url(images/pdm3tvlastnode.gif);
+	BACKGROUND-REPEAT: no-repeat
+}
+.tvlastnodeR
+{
+	BACKGROUND-POSITION: left center;
+	BACKGROUND-IMAGE: url(images/pdm3tvlastnodeR.gif);
+	BACKGROUND-REPEAT: no-repeat
+}
+.tvmnode
+{
+	BACKGROUND-POSITION: left center;
+	BACKGROUND-IMAGE: url(images/pdm3tvmnode.gif);
+	BACKGROUND-REPEAT: no-repeat
+}
+.tvmnodeR
+{
+	BACKGROUND-POSITION: left center;
+	BACKGROUND-IMAGE: url(images/pdm3tvmnodeR.gif);
+	BACKGROUND-REPEAT: no-repeat
+}
+.tvnode
+{
+	BACKGROUND-POSITION: left center;
+	BACKGROUND-IMAGE: url(images/pdm3tvnode.gif);
+	BACKGROUND-REPEAT: no-repeat
+}
+.tvnodeR
+{
+	BACKGROUND-POSITION: left center;
+	BACKGROUND-IMAGE: url(images/pdm3tvnodeR.gif);
+	BACKGROUND-REPEAT: no-repeat
+}
+.tvpnode
+{
+	BACKGROUND-POSITION: left center;
+	BACKGROUND-IMAGE: url(images/pdm3tvpnode.gif);
+	BACKGROUND-REPEAT: no-repeat
+}
+.tvpnodeR
+{
+	BACKGROUND-POSITION: left center;
+	BACKGROUND-IMAGE: url(images/pdm3tvpnodeR.gif);
+	BACKGROUND-REPEAT: no-repeat
+}
+
+.LinkHAVLB
+{
+	BACKGROUND-POSITION: left bottom;
+	border-top: 1px solid darkblue;
+	BACKGROUND-IMAGE: url(images/HalfArrowVLB.gif);
+	border-left: 1px solid darkblue;
+	border-bottom: 1px darkblue;
+	BACKGROUND-REPEAT: no-repeat;
+	POSITION: absolute;
+	BACKGROUND-: 1px solid darkblue
+}
+.LinkHAVLT
+{
+	BACKGROUND-POSITION: left top;
+	BACKGROUND-IMAGE: url(images/HalfArrowVLT.gif);
+	border-left: 1px solid darkblue;
+	border-bottom: 1px solid darkblue;
+	BACKGROUND-REPEAT: no-repeat;
+	POSITION: absolute;
+	BACKGROUND-: darkblue 1px solid
+}
+.LinkHAVRB
+{
+	border-right: 1px solid darkblue;
+	BACKGROUND-POSITION: right bottom;
+	border-top: 1px solid darkblue;
+	BACKGROUND-IMAGE: url(images/HalfArrowVRB.gif);
+	border-left: 1px solid darkblue;
+	border-bottom: 1px solid darkblue;
+	BACKGROUND-REPEAT: no-repeat;
+	POSITION: absolute;
+	BACKGROUND-: darkblue 1px solid
+}
+.LinkHAVRT
+{
+	border-right: 1px solid darkblue;
+	BACKGROUND-POSITION: right top;
+	BACKGROUND-IMAGE: url(images/HalfArrowVRT.gif);
+	border-left: 1px solid darkblue;
+	border-bottom: 1px solid darkblue;
+	BACKGROUND-REPEAT: no-repeat;
+	POSITION: absolute;
+	BACKGROUND-: darkblue 1px solid
+}
+
+.CellHiLi
+{
+	background-color: highlight;
+	COLOR: highlighttext;
+}
+.floatMenuItem
+{
+    float:left;
+    background-color:#D6E542;
+    box-shadow: 0.3em 0.3em 0.8em #505050;
+    border-radius: 5px;
+	CURSOR: pointer;
+	border-left:1px solid #000000;	border-top:1px solid #000000;border-right:1px solid #000000;border-bottom:1px solid #000000;
+	
+	margin-left:3px;
+}
+.floatMenuItem_HiLi
+{
+    float:left;
+    background-color:#E6E542;
+    box-shadow: 0.3em 0.3em 0.8em #505050;
+    border-radius: 5px;
+	CURSOR: pointer;
+	border-left:1px solid #000000;	border-top:1px solid #000000;border-right:1px solid #000000;border-bottom:1px solid #000000;
+	margin-left:3px;
+}
+.pgidxSubItems TABLE
+{
+    margin-left:16px;
+    border: 0 none #ffffff;
+}
+.pgidxBanner
+{
+    /* 頁面最上方 內容 */
+    background-color:#446600;/*#776655;#776655;#213300;*/
+    color:#ffffff;
+    /*width:101%;*/
+    text-indent:4px;
+    padding-left:3px; padding-top: 5px;padding-right:5px;padding-bottom:2px;
+    vertical-align:middle;
+    margin-left:-3px;
+    margin-top:-3px;
+    margin-bottom:0px;
+    border-bottom:2px ridge #668822;
+    /* border-radius: 5px; */
+    box-shadow: 0.15em 0.15em 0.3em #505050;
+    opacity:1;
+}
+.pgidxBanner .CollapseBtn, .pgidxBanner .ExpandBtn {
+    background-image:url(images/collapse2.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:contain;
+    margin-left:16px;
+    margin-bottom:-3px;
+    width:30px;
+    height:18px;
+    background-color:#e0e0e0;
+    cursor:default;
+    display:inline-block;
+    border-radius: 3px 3px 3px 3px;
+}
+.pgidxBanner .ExpandBtn {
+    background-image:url(images/expand2.png);
+}
+.PageIndex
+{/* 功能頁面選單 */
+    float:left;
+    color:#111111;
+    background-color:#ccef89;/*#99ffcc;#D6E542;#b3daff;#d9f2d9*/
+    border:1 solid #cfcfcf;
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0.15em 0.15em 0.3em #707070;
+    border-radius: 0px 0px 0px 9px;
+	CURSOR: pointer;
+    /*filter: progid:DXImageTransform.Microsoft.Shadow(direction=135,color=#707070,strength=5) */
+    margin-left:2px;
+    margin-top:2px;
+    margin-right:2px;
+    margin-bottom:4px;
+    opacity:1;
+}
+.PageIndex TABLE
+{
+    /*background-color:#99ffcc;*/
+    border:0 none #000000;
+    cursor: pointer;
+    border-spacing: 0px;/**/
+}
+.PageIndex TD
+{
+    color:#111111;
+    /*background-color:#99ffcc;*/
+    border:0 solid #000000;
+    cursor: pointer;
+    vertical-align:middle;
+}
+.PageIndex TD TABLE
+{
+    margin-left:16px;
+    margin-right:0px;
+    border-spacing: 0px;
+}
+.PageIndex .pgItemDisabled
+{
+    color:#5e5e5e;
+    width:100%;
+    background-color:inherit;
+    padding-left: 16px;
+    padding-top: 3px;
+    padding-right:16px;
+    padding-bottom: 3px;
+    text-decoration:none;
+    CURSOR: default;
+}
+.PageIndex .pgItem, .PageIndex .pgItemHiLi
+{
+    width:100%;
+    background-color:inherit;
+    padding-left: 16px;
+    padding-top: 3px;
+    padding-right:16px;
+    padding-bottom: 3px;
+    CURSOR: pointer;
+}
+.PageIndex .pgItemHiLi
+{
+    background-color:#ffff44;
+}
+.PageIndex .lvl_0, .PageIndex .lvl_0_HiLi
+{
+    width:100%;
+    text-align :center;
+    color: #ffffff ;
+    background-color: #447700;/*#44aa66;#006699;*/
+    padding-left: 16px; padding-top: 3px; padding-right:16px; padding-bottom: 3px;
+    border-radius: 0px 0px 0px 10px;
+    font-weight:normal;
+    CURSOR: default;
+    font-size:115%;
+}
+.PageIndex .lvl_0_HiLi
+{
+    background-color:#449900; /*#44aa66;*/
+}
+.PageIndex .lvl_1, .PageIndex .lvl_1_HiLi
+{
+    width:100%;
+    background-color:#aacc66;/*#88e0bb;#BAC405;#80c1ff;*/
+    text-decoration:none;
+    padding-left: 16px; padding-top: 3px; padding-right:16px; padding-bottom: 1px;
+    background-image:url(images/Tools_MoveDown.gif);
+    background-repeat:no-repeat;
+    background-position:right ;
+    CURSOR: default;
+    border-radius: 0px 0px 0px 10px;
+    border-spacing:2px;
+
+}
+.PageIndex .lvl_1_HiLi
+{
+    background-color:#bbdd66;
+}
+.PageIndex .lvl_2,.PageIndex .lvl_2_HiLi
+{
+    width:100%;
+    background-color:#bbdd77;/*#88e0bb; #BAC405*/
+    padding-left: 16px; padding-top: 3px; padding-right:16px; padding-bottom: 3px;
+    background-image:url(images/Tools_MoveDown.gif);
+    background-repeat:no-repeat;
+    background-position:right ;
+    CURSOR: default;
+    border-radius: 0px 0px 0px 10px;
+    border-spacing:2px;
+
+}
+.PageIndex .lvl_2_HiLi
+{
+    background-color:#ccee77;
+}
+.PageIndex .lvl_N, .PageIndex .lvl_N_HiLi
+{
+    width:100%;
+    background-color:#bbdd77;/*#88e0bb;#BAC405;*/
+    padding-left: 16px; padding-top: 3px; padding-right:16px; padding-bottom: 3px;
+    background-image:url(images/Tools_MoveDown.gif);
+    background-repeat:no-repeat;
+    background-position:right ;
+    CURSOR: default;
+    border-radius: 0px 0px 0px 10px;
+    border-spacing:2px;
+
+}
+.PageIndex .lvl_N_HiLi
+{
+     background-color:#ccee77;
+}
+.qryParamArea
+{
+    border-bottom:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top:2px;
+    padding-bottom:2px;
+    background-color:#f1f1f1;
+    line-height:1.6;
+}
+.QryParam
+{/* 查詢參數輸入物件*/
+    margin-left:20px;
+    /*background-color:#88e0bb;
+    font-size:medium ;*/
+    overflow: hidden;
+}
+.QryParam INPUT
+{
+    /*padding-right:20px;margin-left:20px;
+    background-color:#88e0bb;
+    width:90px;*/
+
+}
+.QryParam SELECT
+{
+	border-left: 1px  solid blue;
+	border-top: 1px solid blue;
+	border-right: 1px solid blue;
+	border-bottom: 1px solid blue;
+	/*font-size:medium ;
+	font-family: ;Verdana, Arial, Helvetica, Sans-Serif*/
+	border-radius: 3px ;
+	/*background-color:grey;
+	margin-right:-16px;*/
+}
+SPAN.QryParam 
+{
+    /*margin-left:20px;*/
+    margin-right:3px;
+    white-space:nowrap;
+}
+.QryLaunch
+{
+    text-decoration:underline;
+    font-weight:bolder;
+    padding-left: 18px; padding-right: 3px; cursor: pointer;
+    /*background-image:url(images/search.png);*/
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAmpJREFUeNqEU0trE1EUPpN55qFpM01sjFDqExfSgnbhwkYrFqzUUAX9C4JS0aAB0ZVSiY+Nr5XoH1BwIVYhbdQo+Ni4q6JGLCZjIzQxSZOZzMtzxiQoRv3gm3PPfXznu+cyjG3bQDh3diooiuIN5JggCB5N01Rd1x+pqnr49JlTueYeZy/m0AJHn/NTyT2yLN8Z2bldCofDwPM84GFJUb7GZmfSY8nkxQOJxIl70AEsxwpBnudexGLjUk+wBzjO0QSGYcDtdsOqSISdm3s7kZ59fBunK7Q2HN3WFnAhbuJBkXExgLah0dCpuhMpp/lQKCiyrOtWJwcu5Egg0A3lcrkpQGw4kfJKpQL+Lj9Ylj3cSYDDJnq8Xq9TtV6vg21Z5B8Am6tqP8V8Ph+mttTRAaJKD4ERq1igGwaYpulEylvzLMvWOjrAhQdKXjkYiaxkqHFEOkTPS2N8UigsFKi5aRImXHr4iwO0mFAUxSguFh2r1Hl6RoqUl0ol+JLLGQ1GnP5bE+exyr5M5rnx6uVrm5opipLTVMqfPnlmYGV9aGDDNTYSvfvHFehTq9XvY1iTzyvXP2azuzRVQw1R87g9M9l8cbqQ/3BVNw2Q149OLA0cv4B7T/4m0MQ82h1vJSjisG/Fcmi4R6Ofavz+erWbkZdxcaOhAidIjgjT+hc6YW8s1h6Htx69YlnmkUCoj5HDq3FoXCYRDv6B4JZDTtw4tJvC5Ps3aXOx8HmSehfo7Y9Xv3/LtAVSqRT8D+sGdxxDESARdOBiXGy8fYWmQD8ygOxFRpB+5FqkgNzU1Bl8t8CyS3YXFFX35h8CDABFoiUDjDX8MAAAAABJRU5ErkJggg==);
+    background-repeat:no-repeat;
+    margin-left:16px;
+    white-space:nowrap;
+}
+.QryLaunchAnim
+{
+    text-decoration:underline;
+    font-weight:bolder;
+    padding-left: 18px; padding-right: 3px; cursor: pointer;
+    /*background-image:url(images/QryAnim.gif);*/
+    background-image:url(data:image/gif;base64,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);
+    background-repeat:no-repeat;
+    margin-left:16px;
+    white-space:nowrap;
+}
+.HotQryArea
+{/*常用查詢條件輸入區*/
+    border-right: 1px solid white;
+	border-top: 2px solid #808080;
+	border-left: 2px solid #808080;
+	border-bottom: 1px solid white;
+
+}
+.DlgSort
+{
+    box-shadow: 0.3em 0.3em 0.8em #505050;
+    border-radius: 5px;
+    cursor: pointer;
+    filter:/* progid:DXImageTransform.Microsoft.Shadow(direction=135,color=#707070,strength=5);*/
+    filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#005588,endColorStr=#003366);
+    background: -ms-linear-gradient(top, #005588,#003366);
+    background-color: #003366;
+    color: #FFFFFF;
+}
+.DlgSort .Selected
+{
+    background-color:#e0e044;
+}
+.DlgSort DIV
+{
+    background-color:#88f0cb;
+    color:#000000;
+}
+
+
+/* CSS for Sam framework */
+.GridToolBar 
+{
+    /* position:relative; */
+    min-height: 1.53em;
+    min-width:100px;
+    overflow:visible;
+    margin-bottom:0px;
+    /*
+    background: -moz-linear-gradient(top, #ADE6F6,#3DD6E6);
+    background: -webkit-gradient(linear, left top, left bottom, from(#BEEFFF), to(#3DDFEF));
+    background: -ms-linear-gradient(top,#BEEFFF,#3DDFEF);
+    background: -moz-linear-gradient(top, #E0FFFF,#90bFa0);
+    background: -webkit-gradient(linear, left top, left bottom, from(#E0FFFF), to(#90bFa0));
+    filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#E0FFFF,endColorStr=#90bFa0);
+    width:100%;
+    */
+    padding-left :0px;
+    padding-top:0px;
+    padding-bottom:0px;
+    border-top:0px none #aaaaaa;
+    border-bottom:0px none #888888;
+    float:none;
+    overflow:hidden;
+    vertical-align:bottom;
+    background-color:#D1E1CF;
+    background-repeat:no-repeat;
+    background-position:right center;
+    
+    /*  #C0E0FF;
+    background-color:inherit;
+    background: rgba(192,224,255,1);
+    filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#E0FFFF,endColorStr=#90bFa0); 
+
+    border-radius:0px 0px 0px 0px;
+    background: -moz-linear-gradient(top, #E0FFFF,#90bFa0);
+    background: -webkit-gradient(linear, left top, left bottom, from(#C0E0FF), to(#B0E0EF));
+    background: -ms-linear-gradient(top, #E0EFC0,#E0EFB0);
+    */
+}
+/*
+.GridToolBar UL
+{
+    padding-left :0px;
+    margin-left:0px;
+    padding-top:0px;
+    margin-top:0px;
+    background-color: #d5d5d5;
+    background: -moz-linear-gradient(top, #A0FFFF,#C0BFB0);
+    background: -webkit-gradient(linear, left top, left bottom, from(#A0FFFF), to(#C0BFB0));
+}*/
+DIV1.GridToolBar
+{
+    float:none;
+    padding-top:0px;
+    overflow:visible;
+    overflow-y:visible;
+    /*border:0 solid black;*/
+    border-radius:0px 0px 0px 0px;
+    background: -moz-linear-gradient(top, #E0FFFF,#90bFa0);
+    background: -webkit-gradient(linear, left top, left bottom, from(#E0FFFF), to(#90bFa0));
+    background: -ms-linear-gradient(top, #E0FFFF,#90bFa0);
+    background-color:inherit;
+    width:auto;
+    height:auto;
+    vertical-align:middle;
+    /*display: flex;
+    align-content:center;
+     justify-content:center;
+    flex-direction:row; column | row 
+    filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#E0FFFF,endColorStr=#90bFa0);  
+
+    */
+    
+}
+DIV.GridToolBar TABLE.Shaft 
+{
+    background: -webkit-gradient(linear, left top, left bottom, from(#E0FFFF), to(#90bFa0));
+    background: -ms-linear-gradient(top, #E0FFFF,#90bFa0);
+    background-color:#eeffee;
+}
+.GridToolBar SPAN
+{
+    float:left;
+    /*width: 50px;  */
+    margin-left: 0px;  
+    margin-right: 0px;  
+    margin-top:1px;  
+    min-height: 1.53em; 
+    line-height: 1.4em;
+    text-align: left;
+    background-image :url();
+    border-left: 1px solid #ffffff;  
+    border-top: 1px solid #ffffff;  
+    border-right: 1px solid #666666;  
+    border-bottom: 1px solid #666666; 
+    display: block;
+    -moz-border-radius:0px 0px 0px 0px;               /* For Firefox3.6+ */  
+    border-radius:0px 0px 0px 0px;  
+    
+    white-space: nowrap;
+    cursor:default;
+    background-repeat:no-repeat;
+    background-position:2px center;
+    /*background-size:16px 16px;*/
+    padding-left :2px;
+    padding-right:2px;
+    padding-top:2px;
+    background-color:inherit;
+    font-size:0.9em;
+}
+.GridToolBar SPAN:hover
+{
+    background-color: #ffff00;  
+}
+.GridToolBar .Caption
+{
+    background-color:#e8e8e8;
+    border-left: 0px dotted #e8e8e8;  
+    border-top: 0px dotted #e8e8e8;  
+    border-right: 0px dotted #b8b8b8;  
+    border-bottom: 4px dotted #b8b8b8; 
+}
+.GridToolBar .addOnFilter
+{
+    display:inline-block;
+}
+
+.GridToolBar .addOnFilter DIV,.GridToolBar .addOnFilter form
+{
+    display:inline-block;
+    margin-left:3px;
+    margin-top:2px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-radius: 7px 7px;
+    padding-left:4px;
+    padding-right:4px;
+}
+.GridToolBar .addOnFilter input
+{
+   margin-left:6px;
+}
+.GridToolBar .addOnFilter select
+{
+   margin-left:3px;
+}
+.GridToolBar .addOnFilter font
+{
+   cursor:default;
+}
+
+.GridLabel
+{
+    vertical-align:middle;
+    border-radius: 14px 0px 9px 0px;
+    border-left: 1px solid #999999;
+    border-top: 1px solid #999999;
+    border-right: 1px solid #999999;
+    border-bottom: 0px solid #999999;
+    margin-left:0px;
+    margin-top:0px;
+    margin-right:3px;
+    margin-bottom:0px;
+    min-height:20px;
+    max-height:100%;
+    padding-left:4px;
+    padding-top:0.33em;
+    padding-right:4px;
+    padding-bottom:0px;
+    /*background-color:#999999;
+    box-shadow: 0.1em 0.1em 0.3em #505050;
+
+    */
+    background: linear-gradient(toprgba(255,255,255,1), rgba(255,255,255,0)),url(...) center bottom no-repeat;
+    background: -webkit-linear-gradient(toprgba(255,255,255,1), rgba(255,255,255,0)),url(...) center bottom no-repeat;
+    cursor: pointer;
+}
+.GridToolBar .InsertRow
+{
+    /*background-image:url(images/table_row_insert.png);*/
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAhtJREFUeNqkU01oE0EU/mZ/0nSjpqJgCQiCRSkePGjpqWKgpRYqHkUwQsFb9SgIapMahUKPRTyoh4BC9SA9mFjFFukiFq1XsfUHrSK2NJRWIpLN7HPm7SZpvFnfMjPfvN33zffevBVEhMT1p+9KZbnf8wGfAAFtCoTobyyEgG0AsYj5Hppg21CBNmM6ztCc+mS2F33Ay+PAbB/ShW9q7eXRgPOL6rskgjilRiuIXZmkUvYYhvOfIAwtr1kp/Q1JAa8pSOEgBQEfnvSR6W+Dc7kAVmAaUX75+PVezC8ewkBvK5ogkerewyNCdcz+nrZaPZjAtoCj1wTuDNzA56VVxJSv2Xaw1QYPJ7K9ju04tthhvNJj6aXDTmL01BjefBmEygATrsSrDynk3Cn+TPtybjVElWC+C/cGZ9RGEfSPCsqezGDu+3kYTUqUyjvVZeLm9BRyZy9i7ddXTRGe6CPu7MaZWyMhmQFLkaBUKYKiG646tI/0EEuVhQbfLtrXsLceXcBhKcfmzp04jaJ5l50Tsz4OJLoxfPsZc+pDiKplW0B765EQ++BG2nn1OSWzoPtve6gzDW6ScfdHrWEeuKs1PD6zUsPRS3niIpYlMJ0hdAwJtCdamF1661ow43J5Wc2B3/OKat4R1oACBfH05KZbmRU4pr/WknkSr0idl3rI5xWE+t1twHprmwZilvhZrftBXVD8u0n+F/7H/ggwAEYOV/C7+oSSAAAAAElFTkSuQmCC);
+    padding-left:22px;
+}
+.GridToolBar .AppendRow
+{
+    background-image:url();
+    padding-left:2px;
+}
+.GridToolBar .RemoveRow
+{
+    /*background-image:url(images/table_row_delete.png);*/
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAkZJREFUeNqkU99LFFEU/u6dOzOru07gWuBLD8UKRhBhCanRQ2w/CaQnISj/gP4DyV1pqaDSCiIM3Uef7KVIkfKhH7a1LSYRBYkZIlQkybbtuts4czt3Zn9Ib9YHh/nmu+ece+6557LmxNRM/rfTYbuAKwEGBSJl9jdnjEHnQNDQ5nWNtwgVnB04js1iS2wyYpkM3FbbKjyPAi9OAKljiE0sAy+PelbjpE8STx323FXFKlKgHH/hxzC4pkFQeQFuI7E67Ok+vwtJa3pAR3xtDHHUTiVkOcOZ6A5wChYacG96Hj3RiKePP/qIniMtcEl/29uLbU/HgU+/IHUTLvnzSiqjDiANQpASavASKeOhEHT6GuTTlHqAtlsjSLeGUay38NMM0RGYn2D27DmEU/fBNIH9pC14TZdolw4yXaexeP4m2gwTpdsXsef6Hbzu60bAELUETRTcGU/A/v4Vnib9azO2NmMmEcOh0RHMMQ7NakQpOYRd/Zfw5uplKVC7YehLi+CfF1BJqirQikUvl1n2M4INkK6D9fya30TlpJDtPIXHySSY0ME482WV4Mkz5A52Y+xdHjsp0KgLorD3AD4MJdA1u7wPgb6HUmGdzCZzyUYz32QFyfSXKp+ONMr84IB81RqWuJaRwcE01F5eBZpXjn8nem61OnEin63yQsdJpG9cQfv7FQQKWVilHJjVPyH/aZTjU7BMzkQ9d5Zorrfbjlt7TKz8hjZMnEeouaq/OtUd1JDj6p9Wdm9o8mbgkM0xKSX+B38EGAC2m+wilWllXQAAAABJRU5ErkJggg==);
+    padding-left:22px;
+}
+
+.GridToolBar .Save
+{
+    /*background-image:url(images/save.png);*/
+    background-image:url(data:image/png;base64,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);
+    background-repeat:no-repeat;
+    padding-left:22px;
+}
+.GridToolBar .SaveWhole
+{
+    /*background-image:url(images/save.png);*/
+    background-image:url(data:image/png;base64,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);
+    background-repeat:no-repeat;
+    padding-left:22px;
+}
+.GridToolBar .DeleteData
+{
+    /*background-image:url(images/DeleteRed.png);*/
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAAB6JQAAgIMAAPn/AACA6AAAUggAARVYAAA6lwAAF2/XWh+QAAADFklEQVR42qSRS2icVRxHz//e+30z40zSNI1NJ5M0aWpj0hCToEiRqAhWS5G2ii7ERVdioSC4E7pyI5SutIsufCJaFIoQRLJQKVpKwaRYA1XTF01MWpukdJLM8/vuw0VF3HvgtzmrHxw5uWPHrvGDBz7u6u3uvvDRJ58uXr3xjktTnEBOQQZIAOcDOE+kVfuD/f3vbhvY9dyN8xdOm7GXDn0zvm/vw/HaXdSzE8fOrZWL1/+8fURpxX+xzpPRes/A2OiHW4eHB27PL8xvNGqXTDYTt6ryKmZ9hd5NJiru6Xvj+2b5qemVxhNBSTkA1ntVatt0Zmxs7FBZqdr01NTRtNH8IADyXrFILjJvPTby0LGhgt2il25SWy7z81+N1Ys1P5QTBoeiaLJUKrVfrtWn55ZuTeTiOMm3tlKrrCOndvZTW1nFJE3aI94fKegjHd5FSdMzV3eVnCNXMEbPeP/ZPesOiyiiOCaXz1OrrKNEBBMZspmYlVr65tnlxs5za+7XtbqjZEMh57z+yboTd7w/jNYEQAARQQCTpgn1pEnTWoxSVIW7SRoi5z0uQFYLmxXPLHuFDQBCYi3NahV8QD/eqNNMU3wIaOgZ9H5ut/O9VRFmjf62JSP94wXVvZBKx5plSgSch6a1JB5UCAFECNA54Nxsv/NbrBYuRerLRSUv/JjKy+tZ7V7cHh9VwiMuQOD+kwAouZ9ZDTg/0xdCm4mFP4y6eQt5NQaanskzd+xrsRZ5ssNMhuAxEv6dkgBF5z4fCr47m9WsRNr+7uV5HcAFMEDDhq++nm8e3503fdti9br84w2ggndbh9rbXikUYsgJM5YTqedKCGA9BAJZBUsN//Yv99Iro3lzXAhoQANqc6FwoO/pCdM22Iu0xCFj5FRPTtGVVXRmFaLAC0QaZjfsfnHhgU6tDuZFKIigqkm6mB0doWP/Xih1+Yb19dQHEh+wIRADERADAa7/VncnuxTDPRp6NOhHrb2WeLevZXtP8YezF08vlCtf1FNPNfVUUo8SRaQEEUGL0IDvanC+AmEDkBAC/4e/BwACT2zMWyQBIAAAAABJRU5ErkJggg==);
+    background-repeat:no-repeat;
+    padding-left:22px;
+}
+.GridToolBar .Export
+{
+    /*background-image:url(images/export.png);*/
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAipJREFUeNqkk0toE0EYx/+7mw3Z1DxqY6xJii0GWpvLItgaStVWsNCDCB6qN0F68CCINy8exINexIt4UQRBFLEXwR4KQlqjlfqqWLEssQ3aJKaNTdY83Z3ddXc0LYgWowPD7Dx+v/1m5htm4F4H/qfY9PHzJ8z2ZIPcNXb43A3rgzkweseIHok2RE+PTSPgkYNLPZfSNsMwUJXLDQksZm0L21sKyL58D8EpbAgRPo98cAze9CGEt6podlbKS5bA767h6PAOiKL4R3i5ksHooyG0hQkyix/gykSA7O4fEfxNyJ+KC/A2bYLPv4otfgbPJl+hxOZazSl5Q0E8NYGHydtIlZL4UiugjSjgeRZ79gqYiiXewUDgtwLN0HD28XEky7Owu1chtGro9AAq4cEwDOw8g30DXi4+WUzYfj3dGqngdGwEK9UEQj4H2lv6YON4cJyOBRKjAoZhEeJEc/2Mgwp0XYemaVRwc+4KsvJH9Ab6ka6tYPzta7jsblNcRThimDCBDztxf+q5qulaiK0LCCG0Svk5tHu68CI3i6HgMdwdfIrrfROINO+CXGDh0ToQn1lGU2lbj3VBVGCBqqpCURQInBMehw9Xow/Qu3kQOjHoXEn9im7HQczPM/DmutCZOry4do11gRXJme6LdCu6ZkZlEDpm9U+FL+BW8jJEVz+K+SAUqOt5IEkS/bu1kMI/oXrK1tv9GAG+AU90aT2VqeCzbNY3//ScvwswAE/QAej3Hp/VAAAAAElFTkSuQmCC);
+    background-repeat:no-repeat;
+    padding-left:22px;
+}
+.GridToolBar .SortA
+{
+    /*background-image:url(images/SortA.png);*/
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAeNJREFUeNpi/P//PwM6kFjw0B5IRQFx94sE+TsMeAALuoDIrLvMQGoyEGsB8X0g7oDJqW79IA6kPt72FvgBE2NCN+D3z9+xQPwCiHcAsTeaZpCBX4BsDqwGcHZdYvv1/VcjENcD8VYgtgSKSYDk/v39h4KxeuH3t585QArkBV0gVvz/9SczIzd7IJA9/e/vP/jDgLHsED+QqgbiF0CcBhFk+MXw7TvIG9N///qN3wCmNy8rgNRrINb7Oy/0L0iMOWn1FiDlBKQ5RexMcRvAETCNmZWBgQ3IzP2xIesvTJL13espQOopEEsDA/QzNgMYsaUDbIB34lVYLIAs4vmcr/0DMx1I+4DCQA7KswFiFSCWZ3i65cXvH7+ISEhPt7RCDTIAkrFAXAzSDBL68+M3M5JKISB+htULvyVcRIHUeSDewfpiTwpYUdXRWyBjGZkYQXH5//+//8AgY3j8v81aA8WATyLmIP8dgHId+N+eQrg7afsHBi42bjD726+vDPM8BTC88OXXx2mgBATEhlKfbvxiYGSEpAZgRDHsaDdgUAmeA3I0w501qWAxBoafcBfc5pQAJRhQvB8H4suwUFH78bIFSIMSGShJc8Hsgia4z3ijkRHZBQwM3NAoBGn4DTXkJ0CAAQB//8Tcg2NkfgAAAABJRU5ErkJggg==);
+    padding-left:22px;
+}
+.GridToolBar .SortD
+{
+    /*background-image:url(images/SortD.png);*/
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAdVJREFUeNpi/P//PwMlgBHFAGmfaiApB+XZALEKEMszPN3yAiSguvWDOJD6eNtb4Ad2AxAGGQDJY0BcBtQ8BUnzfSBmA2IemCEs6Hr/S3uJAqktQLyM8em2KTDxf3//YfUCigHfxOxApm8E4kdAnMWFJPf39x/CBnz9/WEakFIEYkPR95d+Icv9/vUbvwH3uGS8gVQyEB8H4sbPXDIg4adK3540gRh/fhIwAKhwKyhQcUXXb0IGwIDo7Hv2QCoKiLtfpyrdgRvw4xdhAwSm3mQGUpOBWAsaZR0kGfD7x+9YIPUCGgveyAb8+fGbGUmpEBA/Q0lIbC3nQFF4G4gjgNgA6hKZXzVGLxirjt4CJS9GJkZQXP7//+8/K5B+/L/NWoMFYcPPHCAFskUXHJXffzEzcLIFMjIyTgfy1RiStn/4z8XGDUkwv74yzPPUYGyHuoCxYDc/KCahzv8ONRNk0G6GiW6+QJqDQcpOnEEleA5IC8OdNakMzw6B1P4EG8ASuwxoFkMgEGv/WRz1Fxw4sctAydnp//tHov+2VoK8JwHEsMT5BWrZZxYO/6nMLJAMkvtjY/ZfeOh+eg/KB08ZGDmlfjIwPAGyX0MzEijQQIniJ4gNEGAATquuY8yZT4cAAAAASUVORK5CYII=);
+    padding-left:22px;
+}
+.GridToolBar .SumCells{
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABtUlEQVR4XrXSvariQBQH8DOgQqwsBBGLQb0JWLqNihYKfoCNgkVewKfYB7hvMfV0Vj6B2ApqYVCjqHBfwK9ooe5hL0s4BHbYjfnDaQLz/yU5w+A7XNd1q9frafDGHA4HYOCGN5tNq9vtvg1Zr9cI0FSKxeIIv4Q8dxwHhBDOfr//qQJqtdpnu93WALPZbBDwxmw0GrJcLhPkdrvBYDCwV6uVrjB4pVKx6vW6ttvtCECQTqcjDcMgyP1+h+FwaG+3WyVSKBSsdDqtUYDGbLVaMpvNepDpdComk0lfhSSTSYsC3pjValVyzj3IYrEQ8/lciTBQxyyVSjKVShHkcrnAeDwWp9Ppr4gLKJB8Pi8TiQRBjscjzGYzgVjfB+AiuVxOxuNxgpzPZ1gul+J6vfZ9AC6SyWRkLBYjCJYDXkmBV9mDhP4R+HIcB0Iheuz5fEIkEvmBwP9/Af5//nq9rHA4rAEN4KJt3IfuZwc8Go3+Lmfs+8jj8fjz9jYuWfezZI5j4WjgjY1DytWA/3IKBFmOWbMgy3E+WJDlgGFBlhNAUf7CGYE6Bk6SLFlR7jssmHIKXEn5m/MLfxCxCCl5RoYAAAAASUVORK5CYII=);
+    padding-left:22px;
+    background-size: 16px;
+}
+GridToolBar .PrintTable{
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAA6klEQVR4Xu2V4QnCMBCFryEDOIryFrAbtBNYR+gkXaFOUEfIAoeO4gYa9aAS8CQNR//44Hj0R/hyl+alokQANtGGWB0t0xirZ+YbfciloEIIydohpXtKNUN2zHzNIQBook0CO+odiTSIsuZMX+TIVn9QuSq5N1OsvREjxGqdMYSkgckZQMZY9dtnmMUZnZg5PF1PhnIdALzcGtRJrZMMXsmtagkAwH3VZPBZO9RVM3PQIiiQvYKP1irpIGdVHkFe3vY6HVXynTcu2eD6P4PR6PSOAGwX3KEmp6NRIuQCoCDBf3fUC6wE0qegB1yVRq+abVqFAAAAAElFTkSuQmCC);
+    padding-left:22px;
+    background-size: 16px;
+}
+.GridToolBar .ShwForm
+{
+    /*background-image:url(images/form1.png);*/
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAASESURBVFhHxVdNiFtVFP7ee3k/eS+TTsbGzlgFoQtn1424EUbERReKlBbRhYIWoUihFop1MXUzteAs3FgXIgUXXblwRKgLQREFN1K0KpbKIMj8dJhMTTKdZCZ5f/F89yWjmTQvUaftF07enXvuz3fPOd99Ga0lwD3ENgHt0qrquFtovbRPPbsI/P54XXXmcjnUarU70g6CAJPfj6L5fAGWZSUEfN+H/XEFi08GWGlaMDQduq5B0zQ1+f+CZ4zFdFkv27ypCJSfsVAoFBIClUoFY5d9FYFb+h4cn74A2zbVhN0AN/f9ABdnT8FtlnHgO+/2BK4/VoXvFnH23UvI2paKwm4gjltoCIHZN4/B3CwpArUjOXieB50DmAvCNE3EUYyRETpduO7uGNfKy5qtOFI1QDDtRE8ENs2CnDy9BsTDr6EhW6goaLKmtbnWVQMqAl2QgVEYIfRD+M2gxwIJZRRFjOvQxqhGYcjTqigTnairCNTrdeTmaqoIa1pemBrq9LFMljmCljqFxBCGoeOLb6/i1/kFtYC4UkF3EIT46PyrmF+uItPojkCGgzr5YH4yroELM6cViampKQkISQgByd/BJw7DzGi4Nr+I6RNHEYaJLw30hhJRK6PzGEnnP9BTA6GzVzbXJQJ6OwLJJPUUMmbGwDsffIozxw8L8VBJLB3MP/DoIxO4tlCGE1a7VNCTgi09396UVdbevP3FmmQKLn91BW+8ckj5hkV9K8DSn3Ir1kv9LyJGIM7uVSfvh446oii53YRt23N7dLy81Hi5xRur6SpghyGDeR0nz8QkKTCUX4MpKXKtDHKyYM6xBhrHmhI5U8gPVEHLHpNTtlUgp0vSwSJkO0ZGFvr8mx/x8/W2CgaA8wMpwovnjmF5bQON9ZV0FTiujvNnTyoSSgUsRPlQy1OHjgoBDb/8toCZk6IC6UsI9gfdodwbnMci3omeGrDz4/0jIB+Gcub9Obx14gh8ITxQBeLmmMmHi1hcvYWgfjNdBbozplj/LYJkg04XUzD35RW8/uJTqn9YNESy5fUGNsrL6SrI5vcNpQLe7TR+BkKGcJ5jmVgv30hXgap6qfKMYahnl1ENog5TfFlZzMtKlWftdHNsZB1TzcnIJTZQBZ5EgDchN9p5E8ZyHTMFn339A67+GxUEET489zIqlS2slRbSVcANzpx+DbowpgpabRIk8/SzL8hJNPwkKpg99RwCvhXbBPuBbqpFldQwKriv+KB6Ee2MAF9KXI0qmH7vE7wtMvTlLUd1pIFebrx/ooBqdQvl8kr6LyLZFVHgIwya8g73Rf8iNTH5kpVIKMbByYcwVnAxfn8eE+N7Uu0BMW4eBrEUYhJlou8vomJx//ap+ZC662pTAexSKpBO1Z8M2ZYqsbNtUAXyO3Ppxh/pKnBlkOc4yly5x3vatq3k5GUdjLiOqvQRT9piqW0Z63l2ugoW5f+CUqkk1VpRzt0GTzw6Otr/Z/ndRA+BpaUlFRZ2/pd/uYZtc33uw1TwqQiwIpkGgp2dCr0TbUqPf3egCLTb9wDAX/YmZxF9DyXvAAAAAElFTkSuQmCC);
+    padding-left:22px;
+    background-size:20px 20px;
+}
+.GridToolBar .Query
+{
+    /*background-image:url(images/search.png);*/
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAmpJREFUeNqEU0trE1EUPpN55qFpM01sjFDqExfSgnbhwkYrFqzUUAX9C4JS0aAB0ZVSiY+Nr5XoH1BwIVYhbdQo+Ni4q6JGLCZjIzQxSZOZzMtzxiQoRv3gm3PPfXznu+cyjG3bQDh3diooiuIN5JggCB5N01Rd1x+pqnr49JlTueYeZy/m0AJHn/NTyT2yLN8Z2bldCofDwPM84GFJUb7GZmfSY8nkxQOJxIl70AEsxwpBnudexGLjUk+wBzjO0QSGYcDtdsOqSISdm3s7kZ59fBunK7Q2HN3WFnAhbuJBkXExgLah0dCpuhMpp/lQKCiyrOtWJwcu5Egg0A3lcrkpQGw4kfJKpQL+Lj9Ylj3cSYDDJnq8Xq9TtV6vg21Z5B8Am6tqP8V8Ph+mttTRAaJKD4ERq1igGwaYpulEylvzLMvWOjrAhQdKXjkYiaxkqHFEOkTPS2N8UigsFKi5aRImXHr4iwO0mFAUxSguFh2r1Hl6RoqUl0ol+JLLGQ1GnP5bE+exyr5M5rnx6uVrm5opipLTVMqfPnlmYGV9aGDDNTYSvfvHFehTq9XvY1iTzyvXP2azuzRVQw1R87g9M9l8cbqQ/3BVNw2Q149OLA0cv4B7T/4m0MQ82h1vJSjisG/Fcmi4R6Ofavz+erWbkZdxcaOhAidIjgjT+hc6YW8s1h6Htx69YlnmkUCoj5HDq3FoXCYRDv6B4JZDTtw4tJvC5Ps3aXOx8HmSehfo7Y9Xv3/LtAVSqRT8D+sGdxxDESARdOBiXGy8fYWmQD8ygOxFRpB+5FqkgNzU1Bl8t8CyS3YXFFX35h8CDABFoiUDjDX8MAAAAABJRU5ErkJggg==);
+    padding-left:22px;
+}
+.GridToolBar .SetOrderBy
+{
+    background-image:url();
+    padding-left:2px;
+}
+.GridToolBar .QryClear
+{
+    background-image:url();
+    padding-left:2px;
+}
+.GridToolBar .QryAnim
+{
+    background-image:url(images/QryAnim.gif);
+    padding-left:22px;
+}
+.GridToolBar .OK
+{
+    background-image:url(images/Tools_SetSelValue.gif);
+    background-repeat:no-repeat;
+    padding-left:22px;
+    
+}
+.GridToolBar .Cancel
+{
+    background-image:url(images/Tools_CancelSelValue.gif);
+    background-repeat:no-repeat;
+    padding-left:22px;
+    
+}
+.GridToolBar .GridStatusBar {
+    display:inline-block;
+    border-top: 0px solid #aaaaaa;
+    background-color: inherit;
+    border: 1px dotted #aaaaaa;
+}
+.GridToolBar .GridStatusBar SPAN {
+    float:none;
+    margin-left: 0px;  
+    margin-right: 0px;  
+    margin-top:0px;  
+    min-height: 1.53em; 
+    line-height: 1.4em;
+    text-align: left;
+    border-left: 0px solid #ffffff;  
+    border-top: 0px solid #ffffff;  
+    border-right: 0px solid #666666;  
+    border-bottom: 0px solid #666666; 
+    white-space: nowrap;
+    cursor:default;
+    padding-left :2px;
+    padding-right:2px;
+    padding-top:2px;
+    background-color:inherit;
+    font-size:0.9em;
+    display:inline;
+}
+.GridContainer{
+
+}
+.GridStatusBar
+{	
+    /*
+    filter: progid:DXImageTransform.Microsoft.Shadow(direction=135,color=#707070,strength=5) 
+	progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr='#F0CFCF', endColorStr='#D0CFCF');
+    background: -webkit-gradient(linear, left top, left bottom, from(#E0FFFF), to(#B0FFE0)); 
+    background: -moz-linear-gradient(top, #E0FFFF,#C0FFE0);
+    */
+    border-radius:0px 0px 0px 0px;  
+    float:none;
+    clear:both;
+    padding-left:3px;
+    padding-right:3px;
+    background-color:#eeeeee;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 0px solid #aaaaaa;
+    margin-bottom:0px;
+    height: auto;
+}
+.GridStatusBar .pageno, .GridToolBar .GridStatusBar .pageno
+{
+    width:2.5em;
+}
+.GridStatusBar .pagerows, .GridToolBar .GridStatusBar .pagerows
+{
+    width:3em;
+}
+.GridStatusBar .PageNoList SPAN, .GridToolBar .GridStatusBar .PageNoList SPAN
+{
+    padding-left:0px;
+    text-decoration:underline;
+    margin-left:10px;
+    color:Red;
+    /*font-weight:bolder;*/
+    cursor:pointer;
+    border:0px none;
+}
+.GridStatusBar .PageNoList SPAN.Current, .GridToolBar .GridStatusBar .PageNoList SPAN.Current
+{
+    font-weight:bold;
+}
+.GridStatusBar .PageNoList DIV, .GridToolBar .GridStatusBar .PageNoList DIV
+{
+    padding-left:0px;
+    text-decoration:underline;
+    margin-left:6px;
+    width:24px;
+    color:Red;
+    /*font-weight:bolder;*/
+    cursor:pointer;
+    display:inline-block;
+}
+.GridStatusBar .PageNoList .MoveBack, .GridToolBar .GridStatusBar .PageNoList .MoveBack
+{
+    /*float:left;
+    background-image:url(images/Tools_MovePrevious.gif);
+    background-position:-3px center;*/
+    width:27px; height:17px;
+    border:1px dotted #666666;
+    text-decoration:none;
+    font-weight:bold;
+    text-align:center;
+    margin-left:3px;
+}
+.GridStatusBar .PageNoList .MoveForward, .GridToolBar .GridStatusBar .PageNoList .MoveForward
+{
+    /*float:left;
+    background-image:url(images/Tools_MoveNext.gif);
+    background-position:center center;*/
+    width:27px; height:17px;
+    border:1px dotted #666666;
+    text-decoration:none;font-weight:bold;
+    text-align:center;
+    margin-left:3px;
+}
+.GridStatusBar span {
+    background-color:inherit;
+}
+.GridStatusBar span:hover {
+    background-color:inherit;
+}
+TR.GridCriterionArea
+{
+    background-repeat:no-repeat;
+    background-position:3px center;
+    background-size:16px 16px;
+    background-image:none;
+}
+TR.GridCriterionArea TD
+{
+	border-left: 0px solid #aaaaaa;
+	border-top: 0px solid #aaaaaa;
+	border-right: 0px solid #aaaaaa;
+	border-bottom: 0px inset #aaaaaa;
+    padding-left: 0px;
+    padding-right:0px;
+    padding-top : 0px;
+    padding-bottom:0px;
+    overflow:hidden;
+}
+TR.GridCriterionArea TD.QryAnim
+{
+    background-image:url(images/QryAnim.gif);
+    background-repeat:no-repeat;
+    background-position:center center;
+    padding-left:16px;
+    background-color:#eeeeee;
+}
+
+/*
+.GridCriterionArea TD DIV
+{
+    padding-left: 0px;
+    padding-right:0px;
+    padding-top : 0px;
+    padding-bottom:0px;
+    margin-top:13px;
+    overflow:auto;
+}*/
+TR.GridCriterionArea INPUT
+{
+    height:24px;
+    width:100%;
+    background-color:#f9edd6;/**/
+    border-left:0px solid #566bee;
+    border-top:0px dotted #566bee;
+    border-right:0px solid #566bee; /*#566bee*/
+    border-bottom:0px dotted #566bee;
+    padding-left:2px;
+    font-weight:bolder;
+    color:Red;
+    margin: -2px 0px -2px 0px;
+    /*background-image:url(images/QryAnim.gif);*/
+    /*overflow:auto;*/
+}
+TR.GridCriterionArea .QryButton
+{
+    /*background-color:#00ED96;*/
+    background-repeat:no-repeat;
+    background-position:center center;
+    padding-left:16px;
+    /*background-image:url(images/search.png);*/
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAmpJREFUeNqEU0trE1EUPpN55qFpM01sjFDqExfSgnbhwkYrFqzUUAX9C4JS0aAB0ZVSiY+Nr5XoH1BwIVYhbdQo+Ni4q6JGLCZjIzQxSZOZzMtzxiQoRv3gm3PPfXznu+cyjG3bQDh3diooiuIN5JggCB5N01Rd1x+pqnr49JlTueYeZy/m0AJHn/NTyT2yLN8Z2bldCofDwPM84GFJUb7GZmfSY8nkxQOJxIl70AEsxwpBnudexGLjUk+wBzjO0QSGYcDtdsOqSISdm3s7kZ59fBunK7Q2HN3WFnAhbuJBkXExgLah0dCpuhMpp/lQKCiyrOtWJwcu5Egg0A3lcrkpQGw4kfJKpQL+Lj9Ylj3cSYDDJnq8Xq9TtV6vg21Z5B8Am6tqP8V8Ph+mttTRAaJKD4ERq1igGwaYpulEylvzLMvWOjrAhQdKXjkYiaxkqHFEOkTPS2N8UigsFKi5aRImXHr4iwO0mFAUxSguFh2r1Hl6RoqUl0ol+JLLGQ1GnP5bE+exyr5M5rnx6uVrm5opipLTVMqfPnlmYGV9aGDDNTYSvfvHFehTq9XvY1iTzyvXP2azuzRVQw1R87g9M9l8cbqQ/3BVNw2Q149OLA0cv4B7T/4m0MQ82h1vJSjisG/Fcmi4R6Ofavz+erWbkZdxcaOhAidIjgjT+hc6YW8s1h6Htx69YlnmkUCoj5HDq3FoXCYRDv6B4JZDTtw4tJvC5Ps3aXOx8HmSehfo7Y9Xv3/LtAVSqRT8D+sGdxxDESARdOBiXGy8fYWmQD8ygOxFRpB+5FqkgNzU1Bl8t8CyS3YXFFX35h8CDABFoiUDjDX8MAAAAABJRU5ErkJggg==);
+    background-repeat:no-repeat;
+    background-position:center center;
+    border-left: 1px solid #f8f8f8;  
+    border-top: 1px solid #f8f8f8;  
+    border-right: 1px solid #888888;  
+    border-bottom: 1px solid #888888; 
+    -moz-border-radius:3px 3px 3px 3px;               /* For Firefox3.6+ */  
+    border-radius:3px 3px 3px 3px;
+    background-color:#eeeeee;
+    margin-top:0px;
+    /*overflow:scroll;*/
+}
+DIV.CriterionButton
+{
+    background-color:#9BC4E2;/*#F5DEB3; 9BC4E2                    */
+    /* -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+   ilter: progid:DXImageTransform.Microsoft.Shadow(direction=135,color=#707070,strength=5);
+    box-shadow: 0 0 1em #505050;*/
+    border-radius:0px 0px 0px 0px;
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    -ms-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    padding-left:2px;
+    padding-right:1px;
+    /*max-width:120px;
+    width:120px;*/
+}
+.CriterionButton
+{
+    background-color:#F5DEB3;
+    /*max-width:120px;
+    width:120px;*/
+}
+.CriterionButton BUTTON
+{
+    float:none;
+    height:100%;
+    min-width:24px;
+    background-color:#ffbb99;
+    border:2px outset #ffffbb;
+    background: -ms-linear-gradient(top, #F5DEB3,#FFA500);
+    background: -moz-linear-gradient(top, #F5DEB3,#FFA500); 
+    background: -webkit-gradient(linear, left top, left bottom, from(#F5DEB3), to(#FFA500));
+    background-image: -o-linear-gradient(left,#F5DEB3,#FFA500);/*For Opera;*/
+    margin-right:0px;
+}
+.CriterionButton INPUT
+{
+    float:left;
+    height:26px;/*width:24px; do not specify width
+    background-color:#ffbb99;
+    border:2px outset #ffffbb;
+    filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#F5DEB3,endColorStr=#FFA500);
+    background: -moz-linear-gradient(top, #F5DEB3,#FFA500); 
+    background: -webkit-gradient(linear, left top, left bottom, from(#F5DEB3), to(#FFA500));
+    background-image: -o-linear-gradient(left,#F5DEB3,#FFA500);*//*For Opera;*/
+    margin-top:1px;margin-left:0px;margin-right:1px;margin-bottom:1px;
+    /*
+    padding-left:6px;
+    padding-right:6px;
+    text-indent:0px;
+    vertical-align: middle;
+    font-size: normal;*/
+    box-shadow: 0 0 0em #505050;
+}
+.dlgDateSel
+{
+    position:absolute;
+    background-color:#ddddff;
+    left:0px;top:0px;
+    width:320px;
+    overflow:visible;
+    cursor:default;
+    border-left:1 solid #eeeeee;border-top:1 solid #eeeeee;
+    border-right:1 solid #003333;border-bottom:1 solid #003333;
+    text-align:center;vertical-align:middle;
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    /*filter: progid:DXImageTransform.Microsoft.Shadow(direction=135,color=#707070,strength=5);
+    font-size:1em;
+    
+    */
+    box-shadow: 0 0 1em #505050;
+    padding:2px 2px 2px 2px ;
+}
+.dlgDateSel .year
+{
+    width:100%;
+    filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#F7E8AA,endColorStr=#FCB514);
+    background: -ms-linear-gradient(top, #F7E8AA,#FCB514);
+    background-image: -moz-linear-gradient(top, #F7E8AA, #FCB514);
+    background: -webkit-gradient(linear, left top, left bottom, from(#F7E8AA), to(#FCB514));
+}
+.dlgDateSel .year .curYear
+{
+    font-weight:bold;
+    color:Red;
+}
+.dlgDateSel .year TD
+{
+    width:24px;
+    text-align:center;
+    border-left:0 dotted #cccccc;
+}
+
+.dlgDateSel .month
+{
+    width:100%;
+    filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#D8ED96,endColorStr=#709302);
+    background: -ms-linear-gradient(top, #D8ED96,#709302);
+    background-image: -moz-linear-gradient(top, #D8ED96, #709302);
+    background: -webkit-gradient(linear, left top, left bottom, from(#D8ED96), to(#709302));
+    text-align:center;
+}
+.dlgDateSel .month .curMonth
+{
+    font-weight:bold;
+    color:Red;
+    text-align:center;
+    border-collapse: collapse;
+}
+.dlgDateSel .month TD
+{
+    width:24px;
+    text-align:center;
+    border-left:0 solid #cccccc;
+}
+.dlgDateSel .date
+{
+    width:100%;
+    border-collapse: collapse;
+    filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#C4D8E2,endColorStr=#003F87);
+    background: -ms-linear-gradient(top, #E0FFFF,#90bFa0);
+    background-image: -moz-linear-gradient(top, #C4D8E2, #003F87);
+    background: -webkit-gradient(linear, left top, left bottom, from(#C4D8E2), to(#003F87));
+    text-align:center;
+}
+.dlgDateSel .date THEAD TD
+{
+    /*width:14%;*/
+    text-align:center;
+    color:#ffffff;
+    vertical-align:middle;
+    padding-bottom:4px;
+    filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#C4D8E2,endColorStr=#003F87);
+    background: -ms-linear-gradient(top, #C4D8E2,#003F87);
+    background-image: -moz-linear-gradient(top, #C4D8E2, #003F87);
+    background: -webkit-gradient(linear, left top, left bottom, from(#C4D8E2), to(#003F87));
+}
+.dlgDateSel .date .curDate
+{
+    font-weight:bold;
+    color:Red;
+}
+.dlgDateSel .date TD
+{
+    background-color:#bbbbff;
+    border-left:1 solid #cccccc;
+    text-align:center;
+    padding:4px 2px 4px 2px ;
+}
+.dlgDateSel .date TD.otherMonth
+{
+    background-color:#cccccc;
+}
+.dlgDateSel .DlgCtrlClose
+{
+    background-color:#666666;
+    color:#ffffff;
+    width:14px;
+    border-radius:5px 5px 5px 5px;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.teDialog
+{
+    /*float:right;
+    position:fixed;*/
+    position:absolute;
+    /*border:1px outset #666666;*/
+    border-left:1px solid #666666;
+    border-top:1px solid #666666;
+    border-right:1px solid #666666;
+    border-bottom:1px solid #666666;
+    /*-moz-border-radius:5px 5px 5px 5px;*/
+    /*border-radius:5px 5px 5px 5px;*/
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    opacity:1;
+    /*
+    font-size:1em;
+    filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=5, OffY=5, Color='#33333333');
+    filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#aaaaee', endColorStr='#132360');
+    background: -ms-linear-gradient(top, #aaaaee,#132360);
+    background: -webkit-gradient(linear, left top, left bottom, from(#aaaaee), to(#132360));
+    background: -moz-linear-gradient(top, #ddeedd , #80C090);
+*/
+    background-color:#C9E8DD;
+    padding:0px 0px 0px 0px;
+    /*
+    width:280px;height:300px;
+    */
+    
+}
+@keyframes DialogGlitter {
+  0%  {background-color: #044403;}
+  100% {background-color:#C9E8DD;}
+}
+@keyframes NoteGlitter {
+  0%   {background-color:red;color:white;}
+  100%  {background-color:white;color:red;}
+}
+.teDialog .caption
+{
+    border-left:0px solid #eeeeee;
+    border-top:0px solid #eeeeee;
+    border-right:0px solid #eeeeee;
+    border-bottom:1px solid #666666;
+    padding-left:18px;
+    padding-right:0px;
+    vertical-align: middle;
+    margin-left:5px;
+    margin-top:5px;
+    margin-right:5px;
+    margin-bottom:0px;
+    overflow:hidden;
+    height:22px;
+    white-space:nowrap;
+    background-color:#AADDD6;
+    border-radius:3px 3px 0px 0px;/**/
+    background-image:url(images/DialogIcon16.png);
+    background-repeat:no-repeat;
+    background-position:0px 0px;
+    opacity:0.85;
+    text-overflow: ellipsis;
+    /*
+    width:100%;
+    margin-right:3px;
+    left:3px;top:3px;
+    position:absolute;
+    background-color:green;
+    background: -webkit-gradient(linear, left top, left bottom, from(#E0FFFF), to(#90bFa0));*/
+}
+.teDialog DIV.Area
+{
+    /*
+height:300px;width:280px;
+    position:absolute;
+    left:3px;top:24px;
+*/
+    background-color:#fbfbfb;
+    overflow:auto;
+    border:0px inset;
+    margin-left:5px;
+    margin-top:0px;
+    margin-right:5px;
+    margin-bottom:5px;
+    opacity:1;
+
+}
+.teDialog .caption B
+{
+    float:right;/**/
+    height:21px;
+    border:0px solid #aaaaaa;
+    background-color:#333333;
+    border-radius:3px 3px 3px 3px;
+    color:#ffffff;
+    text-align:center;
+    vertical-align:middle;
+    cursor:default;
+    margin-left:2px;
+    margin-right:0px;
+    font-weight:lighter;
+    padding-left:5px;
+    padding-right:5px;
+}
+.teDialog .caption .customMenus{
+    background-image:url(images/grid3x3.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:16px 16px;
+    background-color:#666666;
+    min-width:16px;
+}
+.teDialog .caption .FixLoc
+{
+    background-color:#993333;
+}
+.ItemsSelector
+{
+    background-color:#ffeeee;
+}
+.ItemsSelector SELECT
+{
+    width:100%;
+    height:100%;
+    overflow:auto;
+    /* font-size:1em; */
+}
+.ItemsSelector TD
+{
+    vertical-align:top;
+    text-align:left;
+    padding:0px 0px 0px 0px;
+}
+.ItemsSelector UL
+{
+    
+    margin-left:0px;
+    padding-left:0px;
+    list-style:none;
+    text-indent:0px;
+}
+.ItemsSelector LI
+{
+    float:none;
+    /*list-style:none;*/
+    white-space:nowrap;
+    border-left:1px solid #bbbbbb;
+    border-top:1px solid #bbbbbb;
+    border-right:1px solid #333333;
+    border-bottom:1px solid #333333;
+    background-color:#aabbee;
+    margin-bottom:2px;
+    padding: 2px 2px 2px 2px;
+    width:90x;height:24px;
+    overflow:visible;
+    text-align:center;
+    cursor:default;
+    border-radius:3px 3px 3px 3px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#aaaaee), to(#9999cc));/**/
+}
+.ItemsSelector LI:hover
+{
+    background-color:#ffee00;
+}
+.ItemsSelector .OK
+{
+    margin-top:15px;
+}
+.ExportData
+{
+    cursor:pointer;
+    margin-left:20px;
+}
+.ExportData:hover
+{
+    cursor:pointer;
+    margin-left:20px;
+    background-color:#ffee00;
+}
+.GanttBlock
+{
+    float:left;
+    overflow:hidden;
+    border-left:0px solid #000000;
+    border-top:0px solid #000000;
+    border-right:0px solid #000000;
+    border-bottom:0px solid #000000;
+    border-spacing:0px;
+    margin:0px 0px 0px 0px;
+    font-size:0.6em;
+    height:20px;
+    text-align:center;
+    padding-top:3px;
+}
+DIV.Tabs /* 物件分列標籤*/
+{
+	float:left;
+	border-left: 0px solid white;
+	border-top: 0px solid white;
+	border-right: 0px solid #999999;
+	border-bottom: 0px solid #99cc99;
+	height: auto;
+	min-height: 1.0em;
+	overflow-x: visible;
+	overflow-y: visible;/* 這裡一定要設定為visible container 才能自動調整高度*/
+	overflow: visible;
+	padding: 0px 0px 0px 0px;
+	margin: 0em 0.23em -0.31em 0em;
+	background-color:inherit;
+	opacity:0.85;
+}
+
+DIV.Tabs DIV ::before {
+    width:16px;
+    height:20px;
+    background-color:red;
+     border-left: 0px solid #999999;
+}
+DIV.Tabs DIV
+{
+    float:left;
+    margin-left:0px;
+    margin-right:-0px;
+	margin-top:0.231em;
+	margin-bottom: -0.0769em;
+    border-left: 1px solid #999999;
+    border-top: 1px solid #999999;
+    border-right: 1px solid #999999;
+    border-bottom: 0px solid #99cc99;
+	FONT-WEIGHT:lighter;
+	COLOR: rgba(0, 63, 120, 1);
+	/*height:100%;  height 不可以設定為100%,會造成顯示超過container,但是一定要設定min-height*/
+	min-height:1.21em;
+	CURSOR: default;
+    -webkit-border-topright-radius:0px;
+    -webkit-border-topleft-radius:0px;
+    border-radius: 0.661em 0.01461em 0em 0em;
+    corner-shape: angle;
+	/*
+    background: -moz-linear-gradient(top, #ffffcc,#bbee77);
+    background: -ms-linear-gradient(top, #ffffcc,#bbee77);
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffcc), to(#bbee77));
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#ffffcc', endColorStr='#bbee77');
+
+    background-image: -o-linear-gradient(top,#ffffcc,#bbee77);
+	background: -moz-linear-gradient(top, #ffffcc,#bbee77); 
+	list-style-type :none;
+    background-repeat:no-repeat;
+    background-position:2px 2px;
+	background-color:#B0E0E6;
+    padding-left:0px;
+    padding-top:0px;
+     -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom:-2px;
+   */
+    /*background: #58a;
+    background: linear-gradient(135deg, transparent 6px, #58a 0); */
+    padding: 0.23em 0.076em 0em 0.276em;
+    background-color:inherit;
+    opacity:0.85;
+}
+DIV.Tabs DIV.Active
+{
+    margin-top: 0em; /*-0.0769em;*/
+    margin-bottom: -0em;
+    z-index:10000;
+    FONT-WEIGHT:700;
+    text-decoration: none;
+    min-height:1.44em;
+    opacity:1;
+    border-top-color: #ff0000;
+}
+DIV.Tabs DIV:hover{
+    background-color:#88ff99;
+}
+DIV.Tabs DIV.Active:hover {
+    background-color:#88ff99;
+}
+DIV.Tabs DIV SPAN
+{
+    /*height:100%;
+    */
+    padding: 0.153em 0.153em 0.153em 0.153em;
+    min-height:0.95em;
+    background-repeat:no-repeat;
+    background-position:0.153em 0.306em;
+    margin-left:0px;
+    margin-top:0px;
+    margin-right:0px;
+    margin-bottom:0px;
+    border-left: 0px solid white;
+    border-top: 0px solid white;
+    border-right: 0px solid #999999;
+    border-bottom: 0px solid #99cc99;
+    color:inherit;
+}
+
+DIV.Tabs DIV.switch0
+{
+    width:18px;
+    margin-top:0px;
+    margin-right: 1px;
+    background-repeat:no-repeat;
+    background-image:url(images/pageSplit.png);
+    /*background-color:#B0E0E6;*/
+   	background-position:center center;
+    border-radius: 0px 0px 0px 0px;
+    -webkit-border-topright-radius:0px;
+    -webkit-border-topleft-radius:0px;
+    border-left: 0px solid #999999;
+    border-top: 0px solid #999999;
+    border-right: 0px solid #999999;
+    min-height:1.3em;
+    height:100%;
+     opacity:1;
+}
+DIV.Tabs DIV.switch1
+{
+    width:18px;
+    margin-top:0px;
+    margin-right: 1px;
+    background-repeat:no-repeat;
+    background-image:url(images/page.png);
+    /*background-color:#B0E0E6;*/
+   	background-position:center center;
+    border-radius: 0px 0px 0px 0px;
+    -webkit-border-topright-radius:0px;
+    -webkit-border-topleft-radius:0px;
+    border-left: 0px solid #999999;
+    border-top: 0px solid #999999;
+    border-right: 0px solid #999999;
+    min-height:1.3em;
+    height:100%;
+     opacity:1;
+}
+DIV.Tabs DIV.switch2
+{
+    width:18px;
+    margin-top:0px;
+    margin-right: 1px;
+    background-repeat:no-repeat;
+    background-image:url(images/PageFloat.png);
+    /*background-color:#B0E0E6;*/
+   	background-position:center center;
+    border-radius: 0px 0px 0px 0px;
+    -webkit-border-topright-radius:0px;
+    -webkit-border-topleft-radius:0px;
+    border-left: 0px solid #999999;
+    border-top: 0px solid #999999;
+    border-right: 0px solid #999999;
+    min-height:1.3em;
+    height:100%;
+}
+DIV.teTools /* 物件分列標籤*/
+{
+	float:left;
+	border-left: 0px solid white;
+	border-top: 0px solid white;
+	border-right: 0px solid #999999;
+	border-bottom: 0px solid #99cc99;
+	height:auto;
+	overflow:visible;
+	padding: 0px 0px 0px 0px;
+	margin:0px 3px 0px 0px;
+}
+
+DIV.teTools DIV
+{
+    float:left;
+    margin-left:0px;
+    margin-right:0px;
+	margin-top:0px;
+    margin-bottom:0px;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-right: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+	FONT-WEIGHT: normal;
+	COLOR: #330066;
+	height:100%;
+	CURSOR: pointer;
+	padding: 3px 3px 3px 3px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#E1F1D5), to(#D1E1C5));
+    background: -ms-linear-gradient(top, #E1F1D5,#D1E1C5);
+	/*
+	filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#F5DEB3,endColorStr=#FFA500);
+    background: -webkit-gradient(linear, left top, left bottom, from(#F5DEB3), to(#FFA500));
+    background: -ms-linear-gradient(top, #F5DEB3,#FFA500);
+	filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#F5DEB3,endColorStr=#FFA500);
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffddcc), to(#bb8877));
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#ffddcc', endColorStr='#bb8877');
+    -webkit-border-topright-radius:5px;
+    -webkit-border-topleft-radius:5px;
+    border-radius: 5px 5px 0px 0px;
+    background-image: -o-linear-gradient(top,#ffffcc,#bbee77);
+	background: -moz-linear-gradient(top, #ffffcc,#bbee77); 
+	list-style-type :none;
+    background-repeat:no-repeat;
+    background-position:2px 2px;
+	background-color:#B0E0E6;
+    padding-left:0px;
+    padding-top:0px;
+     -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    
+   */
+}
+DIV.teTools DIV:hover{
+    background-color:#D1F1D5;
+}
+DIV.teTools DIV SPAN
+{
+    background-repeat:no-repeat;
+    background-position:2px 4px;
+    margin-left:0px;    margin-top:0px;    margin-right:0px;    margin-bottom:0px;
+}
+DIV.teTools DIV SPAN.more
+{
+    background-repeat:no-repeat;
+    background-position: right 4px;
+    background-image:url(images/Tools_MoreRD.gif);
+    margin-left:0px;    margin-top:0px;    margin-right:0px;    margin-bottom:0px;
+    padding-right: 10px;
+}
+DIV.teTopPanel
+{
+    /*background: #D1E1C5 url(images/tbrRightSideLogo.png) no-repeat right top;*/
+    background: #D1E1C5 url(data:image/png;base64,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) no-repeat right top;
+    /*
+    background: #7DE9F9 url(images/tbrRightSideLogo.png) no-repeat right top;
+    background: #C6E6F6 url(images/tbrRightSideLogo.png) no-repeat right top;
+	background: -moz-linear-gradient(top, #FFFACD,#F4A460);
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFACD), to(#F4A460));
+	-ms-filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#F5DEB3,endColorStr=#FFA500);
+    background-color:#eeaaee;
+    background: #F5CE03 url(images/tbrRightSideLogo.png) no-repeat right top ;
+    background: #F5CE03 url(images/tbrRightSideLogo.png) no-repeat right top;
+	filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#F5DEB3,endColorStr=#FFA500);
+    background: #F5CE03 url(images/tbrRightSideLogo.png) no-repeat right top;
+    */
+    margin-top:0px;
+    position:fixed;
+    min-height:1em;
+    height:auto;
+    width:100%;
+    overflow:hidden;
+    border:0px solid #999999;
+    border-bottom:0px solid #999999;
+    float:none;
+    /*
+    padding:1px 1px 1px 1px;
+    vertical-align:bottom;
+    background-repeat:no-repeat;
+    background-position: right 4px;
+    background-image:url(images/tbrRightSideLogo.gif);
+    */
+}
+.Logout
+{
+    margin-top:2px;
+    padding-top:4px;
+    margin-left:2px;
+    white-space:pre-wrap;
+    border-bottom:1px dashed #999999;
+    color:#000088;
+    cursor:pointer;
+    float:left;
+}
+DIV.teMenus /* 物件分列標籤*/
+{
+	float:left;
+	/*
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffde), to(#deffcd));
+    background: -ms-linear-gradient(top, #ffffde,#deffcd);
+    filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#ffffde', endColorStr='#deffcd',GradientType="0"); 
+*/
+	background-color:#f0f0ff;
+	border-left: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	height:auto;
+	overflow:visible;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px -1px;
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 0px;
+    opacity:1;
+}
+
+DIV.teMenus DIV
+{
+    float:none;
+    margin-left:0px;
+    margin-right:0px;
+	margin-top:0px;
+    margin-bottom:0px;
+    border-left: 0px solid white;
+    border-top: 0px solid white;
+    border-right: 0px solid #999999;
+    border-bottom: 0px solid #999999;
+	FONT-WEIGHT: normal;
+	COLOR: #222222;
+	CURSOR: default;
+	padding: 2px 2px 2px 2px;
+	white-space:nowrap;
+}
+DIV.teMenus DIV:hover{
+    background-color:#eedd66;
+}
+DIV.teMenus DIV.HLine
+{
+    border-top: 1px outset #cccccc;
+    margin-left:2px;
+    margin-top: 3px;
+    margin-right:2px;
+    margin-bottom:0px;
+    height:1px;
+}
+DIV.teMenus DIV.HLine:hover{
+    background-color:inherit;
+}
+DIV.teMenus DIV SPAN
+{
+    background-repeat:no-repeat;
+    background-position:1px 2px;
+    margin-left:0px;    margin-top:0px;    margin-right:0px;    margin-bottom:0px;
+    padding-top: 0px;
+    padding-left: 20px; padding-right: 2px;
+}
+DIV.teMenus DIV SPAN.more
+{
+    background-repeat:no-repeat;
+    background-position: right 4px;
+    background-image:url(images/Tools_MoreRD.gif);
+    margin-left:0px;    margin-top:0px;    margin-right:0px;    margin-bottom:0px;
+    padding-right: 12px;
+}
+DIV.teMenus DIV.checked {
+    background-image:url(images/checked16.png);
+    background-repeat:no-repeat;
+     background-position: 2px center;
+}
+.BKPNL
+{
+    border:1px solid #333333;
+    width:100%;
+    height:100%;
+    background-color:#444444;
+    opacity:0.5;
+    filter:alpha(opacity=0.8);
+}
+
+TABLE.Shaft
+{
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-color:#eeee33;
+    border-spacing:0px 0px;
+    height:auto;width:auto;
+    /*-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 0.5em #606060;
+    border-radius: 5px;
+*/
+    
+}
+TABLE.Shaft TD
+{
+	min-width:20px;
+	min-height:20px;
+	width:20px;height:20px;
+	border-left: 1px solid #efefef;
+	border-top: 1px solid #efefef;
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:16px 16px;
+    border-spacing:0px 0px;
+}
+TABLE.Shaft TD.L {background-image:url(images/Tools_MovePrevious.gif);}
+TABLE.Shaft TD.R {background-image:url(images/Tools_MoveNext.gif);}
+TABLE.Shaft TD.U { background-image:url(images/Tools_MoveUp.gif); }
+TABLE.Shaft TD.D {background-image:url(images/Tools_MoveDown.gif);}
+TABLE.Shaft TD.C {background-image:url(images/CloseDlg.png);}
+TABLE.Shaft TD.LU {background-image:url(images/Tools_MoveLU.gif); opacity:0.5;}
+TABLE.Shaft TD.LD {background-image:url(images/Tools_MoveLD.gif); opacity:0.5;}
+TABLE.Shaft TD.RU {background-image:url(images/Tools_MoveRU.gif); opacity:0.5;}
+TABLE.Shaft TD.RD {background-image:url(images/Tools_MoveRD.gif); opacity:0.5;}
+TABLE.Shaft TD.MF 
+{
+    background-image:url(images/Tools_MoveFirst.gif);
+    border-radius: 0px 0px 0px 0px;
+}
+TABLE.Shaft TD.ML { background-image:url(images/Tools_MoveLast.gif); border-radius: 0px 0px 0px 0px;}
+TABLE.Shaft .positionTxt
+{
+    background-color:#ffffff;
+    border-left:1px none #666666;
+    border-top:1px solid #666666;
+    border-right:1px none #666666;
+    border-bottom:1px solid #666666;
+    min-width:50px;
+    text-align:right;
+}
+TABLE.Shaft TD.RSH { background-image:url(images/refresh16x16.png); border-radius: 0px 0px 0px 0px;}
+
+DIV.RecForm 
+{
+    background-color:#ffffff;
+    border: 0px solid black;
+    overflow:hidden;
+    padding:0px 0px 0px 0px;
+    margin:2px 2px 2px 2px;
+}
+DIV.RecForm DIV.UTXB
+{
+    float:left;
+    white-space:nowrap;
+    text-align:left;
+    border: 0px dotted #bb0000;
+    /*width: 30%;
+    margin-top:2px;
+    margin-right:16px;
+    margin-bottom:2px;
+    margin-left:0px;*/
+    margin:2px 2px 1px 0px;
+    padding: 0px 10px 0px 0px;
+    width:25%;
+    vertical-align:bottom;
+}
+DIV.RecForm DIV.UTXB .Label
+{
+    float:left;
+    border: 0px solid #00bb00;
+    text-align:right;
+    overflow:visible;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    height:100%;
+}
+DIV.RecForm DIV.UTXB .Data
+{
+    float:left;
+    border: 1px dotted #bb0000;
+    text-align:left;
+    overflow:visible;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    height:100%;
+}
+DIV.RecForm DIV.UTXB TEXTAREA
+{
+    float:left;
+    height:70px;
+    width:70%;
+    margin:0px 0px 0px 0px;
+    /*font-size:medium;*/
+    overflow:auto;
+    white-space:pre-wrap;
+}
+DIV.RecForm DIV.UTXB INPUT
+{
+    float:left;
+    width:70%;
+    /*font-size:medium;*/
+    margin:0px 0px 0px 0px;
+    background-image:url();
+}
+.RecForm .Label
+{
+    color: rgb(0, 74, 74);
+}
+.RecForm TD.Label
+{
+    color: rgb(0, 74, 74);
+    background-color:#eaeaea;
+    min-height:22px;
+}
+.RecForm TD.Value
+{
+    white-space:pre-wrap;
+    border-bottom:0px solid #aeaeae;
+}
+.RecForm TD.Value INPUT, .RecForm TD.Value TEXTAREA, .RecForm TD.Value SELECT
+{
+    white-space:pre-wrap;
+    text-overflow: ellipsis;
+    overflow:visible;
+    border:1px solid #999999;
+}
+
+.RecForm .FieldsTable /* 單筆資料展現 表格*/
+{
+    clear:left;
+    width:100%;
+}
+DIV.RecForm .CtrlBar
+{
+    width:100%;
+    background-color:#eaeaea ;
+    border:0px solid black;
+    min-height:28px;
+    overflow:auto;
+}
+.RecForm .SwitchMode
+{
+    background-image:url(images/edit01.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: 24px 24px;
+    min-height:24px;
+    min-width:24px;
+    float:left;
+    margin-left:2px;
+    width:28px;
+}
+.RecForm .SwitchMode:hover
+{
+    background-color:#e0e030;
+}
+.RecForm .SwitchColumns
+{
+    background-image:url(images/columns.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: 24px 24px;
+    min-height:24px;
+    min-width:24px;
+    float:left;
+    margin-left:2px;
+    width:28px;
+}
+.RecForm .SwitchColumns:hover
+{
+    background-color:#e0e030;
+}
+.RecForm .EditHistory
+{
+    background-image:url(images/EditHistory01.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: 24px 24px;
+    min-height:24px;
+    min-width:24px;
+    float:left;
+    margin-left:2px;
+    width:28px;
+}
+.RecForm .EditHistory:hover
+{
+    background-color:#e0e030;
+}
+.RecForm .SaveRec
+{
+    background-image:url(images/save.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: 24px 24px;
+    min-height:24px;
+    min-width:24px;
+    float:left;
+    margin-left:2px;
+    width:28px;
+}
+.RecForm .SaveRec:hover
+{
+    background-color:#e0e030;
+}
+.btnMoveTop
+{
+    background-image:url(images/Tools_MoveTop.gif);
+    background-repeat:no-repeat;
+    background-position:center;
+    height:24px;
+}
+.btnMoveUp
+{
+    background-image:url(images/Tools_MoveUp.gif);
+    background-repeat:no-repeat;
+    background-position:center;
+    height:24px;
+}
+.btnMoveDown
+{
+    background-image:url(images/Tools_MoveDown.gif);
+    background-repeat:no-repeat;
+    background-position:center;
+    height:24px;
+}
+.algnR
+{
+    text-align:right;
+}
+.algnC
+{
+    text-align:center;
+}
+DIV.btnClose
+{
+    background-image:url(images/CloseDlg.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px;
+    background-color:#ffaaaa;
+    box-shadow: 0.2em 0.2em 0.2em #707070;
+    border-radius: 12px;
+}
+.MoreD
+{
+    background-image:url(images/Tools_MoveDown.gif);
+    background-repeat:no-repeat;
+    background-position:center;
+    border: 1px outset;
+    width:24px;
+}
+.LayoutEditorTbr
+{
+    background-color:#cccccc;
+}
+.LayoutEditorTbr span
+{
+    width: 24px;
+    height:24px;
+}
+.LayoutEditorCanvas
+{
+}
+
+.TreeView
+{
+    overflow:auto;
+    border:1px solid #aaaaaa;
+    padding-top:0px;
+    padding-left:0px;
+    padding-bottom:0px;
+    cursor:default;
+    vertical-align:bottom;
+    background-color:inherit;
+}
+.TreeView .tvNode
+{
+    display:block;
+    text-align:left;
+    vertical-align:bottom;
+    padding-top:0px;
+    white-space:nowrap;
+    clear:both;
+    border:0px solid #009900;
+    background-repeat:no-repeat;
+    background-position:left top;
+    background-image:url(images/tvFolded.gif);
+    border:0px dotted #aa0000;
+}
+.TreeView .tvNodeFolded
+{
+    display:block;
+    text-align:left;
+    vertical-align:bottom;
+    white-space:nowrap;
+    clear:both;
+    border:0px solid #009900;
+    background-repeat:no-repeat;
+    background-position:left top;
+    background-image:url(images/tvFolded.gif);
+    border:0px dotted #aa0000;
+}
+.TreeView .tvNodeUnfolded
+{
+    display:block;
+    text-align:left;
+    vertical-align:bottom;
+    white-space:nowrap;
+    clear:both;
+    border:0px solid #009900;
+    background-repeat:no-repeat;
+    background-position:left top;
+    background-image:url(images/tvUnfolded.gif);
+    border:0px dotted #aa0000;
+}
+.TreeView .tvNodeNoChildren
+{
+    display:block;
+    text-align:left;
+    vertical-align:bottom;
+    white-space:nowrap;
+    clear:both;
+    border:0px solid #009900;
+    background-repeat:no-repeat;
+    background-position:left top;
+    background-image:url(images/tvNoChildren.gif);
+    border:0px dotted #aa0000;
+}
+.TreeView .txtRela
+{
+    text-align:left;
+    vertical-align:middle;
+    background-repeat:no-repeat;
+    background-position:left top;
+    background-image:url(images/R_Blue2.png);
+    border:0px dotted #999999;
+}
+.TreeView .txtRelaR
+{
+    text-align:left;
+    vertical-align:middle;
+    background-repeat:no-repeat;
+    background-position:left top;
+    background-image:url(images/L_Blue2.png);
+    border:0px dotted #999999;
+}
+.TreeView .txt
+{
+    text-align:left;
+    vertical-align:middle;
+    background-repeat:no-repeat;
+    background-position:left top;
+    background-image:url(images/plus.png);
+    border:0px dotted #999999;
+    padding-top:3px;
+    padding-bottom:-3px;
+}
+.InsertRow
+{
+    background-image:url(images/table_row_insert.png);
+    padding-left:24px;
+}
+.AppendRow
+{
+    background-image:url();
+    padding-left:24px;
+}
+.RemoveRow
+{
+    background-image:url(images/table_row_delete.png);
+    padding-left:24px;
+}
+
+.Save
+{
+    background-image:url(images/save.png);
+    padding-left:24px;
+}
+.teMenus .SaveWhole
+{
+    background-image:url(images/SaveWhole.png);
+    padding-left:24px;
+}
+.DeleteData
+{
+    background-image:url(images/DeleteRed.png);
+    padding-left:24px;
+}
+.Export
+{
+    background-image:url(images/export.png);
+    padding-left:24px;
+}
+.SortA
+{
+    background-image:url(images/SortA.png);
+    padding-left:24px;
+}
+.SortD
+{
+    background-image:url(images/SortD.png);
+    padding-left:24px;
+}
+.Query
+{
+    /*background-image:url(images/search.png);*/
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAmpJREFUeNqEU0trE1EUPpN55qFpM01sjFDqExfSgnbhwkYrFqzUUAX9C4JS0aAB0ZVSiY+Nr5XoH1BwIVYhbdQo+Ni4q6JGLCZjIzQxSZOZzMtzxiQoRv3gm3PPfXznu+cyjG3bQDh3diooiuIN5JggCB5N01Rd1x+pqnr49JlTueYeZy/m0AJHn/NTyT2yLN8Z2bldCofDwPM84GFJUb7GZmfSY8nkxQOJxIl70AEsxwpBnudexGLjUk+wBzjO0QSGYcDtdsOqSISdm3s7kZ59fBunK7Q2HN3WFnAhbuJBkXExgLah0dCpuhMpp/lQKCiyrOtWJwcu5Egg0A3lcrkpQGw4kfJKpQL+Lj9Ylj3cSYDDJnq8Xq9TtV6vg21Z5B8Am6tqP8V8Ph+mttTRAaJKD4ERq1igGwaYpulEylvzLMvWOjrAhQdKXjkYiaxkqHFEOkTPS2N8UigsFKi5aRImXHr4iwO0mFAUxSguFh2r1Hl6RoqUl0ol+JLLGQ1GnP5bE+exyr5M5rnx6uVrm5opipLTVMqfPnlmYGV9aGDDNTYSvfvHFehTq9XvY1iTzyvXP2azuzRVQw1R87g9M9l8cbqQ/3BVNw2Q149OLA0cv4B7T/4m0MQ82h1vJSjisG/Fcmi4R6Ofavz+erWbkZdxcaOhAidIjgjT+hc6YW8s1h6Htx69YlnmkUCoj5HDq3FoXCYRDv6B4JZDTtw4tJvC5Ps3aXOx8HmSehfo7Y9Xv3/LtAVSqRT8D+sGdxxDESARdOBiXGy8fYWmQD8ygOxFRpB+5FqkgNzU1Bl8t8CyS3YXFFX35h8CDABFoiUDjDX8MAAAAABJRU5ErkJggg==);
+    padding-left:24px;
+}
+.QueryHist
+{
+    background-image:url(images/Tools_MoveDown.gif);
+    background-repeat:no-repeat;
+    background-position:center;
+    width:18px;
+}
+SPAN.QuickQryM
+{
+    background-image:url(images/Tools_MoveDown.gif);
+    background-repeat:no-repeat;
+    background-position:center;
+    width:14px;
+}
+SPAN.ExpandAdv, SPAN.ExpandRvsAdv
+{
+    background-image:url(images/Tools_MoveDown.gif);
+    background-repeat:no-repeat;
+    background-position:center;
+    width:14px;
+}
+.CollapseBtn
+{
+    /*background-image:url(images/search.png);
+    padding-left:24px;*/
+}
+.BtnRefresh
+{
+    
+}
+.swtFixed
+{
+    background-repeat:no-repeat;
+    background-position:left top;
+    background-image:url(images/L_Blue2.png);
+    width:10px;
+}
+.NumBtn
+{
+    float:left;
+    margin-top:2px;
+    margin-right:2px;
+}
+.NumBtn SPAN
+{
+    /*width:16px;
+    height:16px;*/
+    padding:1px 4px 1px 4px;
+    margin-left:2px;
+    margin-top:0px;
+    border-radius: 0px 0px 8px 8px;
+}
+.CheckinForm
+{
+    cursor:default;
+    background-repeat:no-repeat;
+    background-position:left top;
+    white-space:pre-wrap;
+}
+.CheckinForm INPUT.submit
+{
+    border: 1px outset grey;
+    background-repeat:no-repeat;
+    background-position:left top;
+    background-image:url(images/UploadGo2.png);
+    min-height:36px;
+    min-width:80px;
+    margin-left:3px;
+    padding-left:34px;
+}
+.CheckinForm INPUT.reset /*,*/
+{
+    border: 1px outset grey;
+    background-repeat:no-repeat;
+    background-position:left top;
+    background-image:url();
+    min-height:36px;
+    min-width:80px;
+    margin-left:3px;
+    margin-bottom:3px;
+}
+.CheckinForm  INPUT[type='file'] /*,*/
+{
+    /*min-height:28px; */
+    opacity:1;
+}
+.CheckinForm INPUT.linkattachment, .CheckinForm INPUT.unlinkattachment
+{
+    margin-left:3px;
+}
+.CheckinForm DIV.objectText
+{
+    background-color:#eeeeee;
+    padding-top:3px;
+    padding-left:3px;
+}
+.CheckinForm TR.title
+{
+    background-color:#eeeefe;
+}
+.CheckinForm .filelist :hover
+{
+    background-color: #cfef00;
+}
+.CheckinForm .filelist .filename DIV, .CheckinForm  .file
+{
+    overflow-y:auto;
+    max-height:60px;
+    max-width:640px;
+    height:100%;
+    width:100%;
+    overflow-x:hidden;
+}
+.CheckinForm .filelist A
+{
+    width:80px;
+}
+.CheckinForm .DataEdit TD
+{
+    white-space:pre-wrap;
+
+    text-overflow:ellipsis;
+    word-break:break-all;
+}
+.CheckinForm .Download
+{
+    _border: 1px outset grey;
+    _padding: 2px 3px 2px 32px;
+    background-repeat:no-repeat;
+    background-position:left top;
+    background-image:url(images/Download.png);
+    _min-height:36px;
+    min-width:48px;
+    padding-left:32px;
+    text-decoration:underline;
+}
+.CheckinForm .OldVersion
+{
+    margin-left:5px;
+    cursor:pointer;
+    text-decoration:underline;
+}
+.CheckinForm .actionBar
+{
+    text-align:left;
+}
+.CheckinForm .ChgAttr
+{
+	border-left: 1px dotted #BBBBBB;
+	border-top: 1px dotted #BBBBBB;
+	border-right: 1px dotted #BBBBBB;
+	border-bottom: 1px dotted #BBBBBB;
+    min-width:18px;
+    min-height:18px;
+    /*float:left;*/
+    padding-left:3px;
+    cursor:pointer;
+    background-repeat:no-repeat;
+    background-position:3px center;
+    background-image:url(images/edit01.png);
+}
+.CheckinForm DIV.delFile
+{
+    border:0px outset #bbbbbb;
+    min-width:18px;
+    min-height:32px;
+    display: inline-block;
+    padding: 3px 3px 3px 18px;
+    cursor:pointer;
+    display:inline;
+    background-repeat:no-repeat;
+    background-position:left 3px;
+    background-image:url(images/DeleteRed.png);
+    text-decoration:underline;
+}
+.CheckinForm DIV.moveUp
+{
+    border:0px outset #bbbbbb;
+    min-width:18px;
+    min-height:32px;
+    display: inline-block;
+    padding: 3px 3px 3px 18px;
+    cursor:pointer;
+    display:inline;
+    background-repeat:no-repeat;
+    background-position:left 3px;
+    background-image:url(images/Tools_MoveUp.gif);
+    text-decoration:underline;
+}
+.CheckinForm DIV.moveDown
+{
+    border:0px outset #bbbbbb;
+    min-width:18px;
+    min-height:32px;
+    display: inline-block;
+    padding: 3px 3px 3px 18px;
+    cursor:pointer;
+    display:inline;
+    background-repeat:no-repeat;
+    background-position:left 3px;
+    background-image:url(images/Tools_MoveDown.gif);
+    text-decoration:underline;
+}
+.CheckinForm .btnSelFileName
+{
+    margin-left:4px;
+    margin-top:0px;
+    min-height:18px;
+}
+.CheckinForm div{
+    margin-top:2px;
+}
+.CheckinForm .dropFilesList{
+    margin-top:3px;
+    margin-bottom:5px;
+    color:#003F87;
+    max-height:60px;
+    overflow:auto;
+    padding-left:16px;
+}
+.CheckinForm .getUrlTitle{
+    margin-bottom:2px;
+    margin-left:3px;
+    margin-top:-2px;
+}
+DIV.LinkAttachment
+{
+    margin:3px;
+} 
+div.SelectionHint
+{
+    border-top:1px solid #777777;
+    border-bottom:1px solid #777777;
+    margin-top:5px;
+    margin-bottom:5px;
+    padding:4px;
+}
+.HasAnnex
+{
+    background-repeat:no-repeat;
+    background-position:left top;
+    background-image:url(images/PaperClip.png);
+    vertical-align:top;
+}
+
+.AnnexList   /* 檔案附件清單 */
+{
+    margin-right:3px;
+    background-repeat:no-repeat;
+    background-position:left top;
+    padding-left:18px;
+    background-image:url(images/PaperClip.png);
+}
+.AnnexList:hover   /* 檔案附件清單 */
+{
+    background-color: #ffff00;
+    background-repeat:no-repeat;
+    background-position:left top;
+    padding-left:18px;
+    background-image:url(images/PaperClip.png);
+}
+.AnnexListLink   /* 連結其他物件的檔案附件清單 */
+{
+    margin-right:3px;
+    background-repeat:no-repeat;
+    background-position:left top;
+    padding-left:18px;
+    background-image:url(images/PaperClip_Link.png);
+    background-size:18px 18px;
+}
+.AnnexListLink:hover   /* 連結其他物件的檔案附件清單 */
+{
+    background-color: #ffff00;
+    background-repeat:no-repeat;
+    background-position:left top;
+    padding-left:18px;
+    background-image:url(images/PaperClip_Link.png);
+}
+.WF0
+{
+    width:100%;
+}
+table.WF0{
+    min-height:160px;
+}
+.WF0 TR.BTNBAR /* 主按鈕區*/
+{
+    /*height:32px;*/
+}
+.WF0 TR.BTNBAR BUTTON /* 主按鈕區*/
+{
+    min-width:60px;
+    min-height:24px;
+    margin-right:1px;
+    margin-left:1px;
+    margin-bottom:2px;
+    display:inline;
+}
+.WF0 TR.BTNBAR SPAN.chk /* 主按鈕區*/
+{
+    margin-right:6px;
+    cursor: default;
+}
+.WF0 .chkSyncDtl
+{
+    background-color:#bbbbff;
+    border-radius:3px 3px 3px 3px;
+    padding:3px 3px 3px 0px;
+    margin-left:3px;
+}
+ /* Workflow style*/
+.WF
+{
+}
+.WF table.signing
+{
+    width:100%;
+    height:100%;
+}
+.WF .opinionC
+{
+    text-align:left;
+    padding-right:6px;
+    padding-bottom:1px;
+}
+.WF .opinion
+{
+    width: 100%;
+    height: 100%;
+    min-height:45px;
+}
+.WF .opinionLock
+{
+    width: 100%;
+    min-height:16px;
+    border: 1px dotted grey;
+    background-color:#eeffee;
+}
+.WF .opinionDisabled
+{
+    width: 100%;
+    height: 100%;
+    border: 1px dotted red;
+}
+.WF .action
+{
+    width:80px;
+    white-space:nowrap;
+    height:1em;
+}
+.WF .action span, .WF .action div
+{
+    margin-right:3px;
+    white-space:nowrap;
+}
+.WF .action .ApproveC
+{
+    margin-right:5px;
+    color:#008800;
+    white-space:nowrap;
+}
+.WF .action .DisapproveC
+{
+    margin-right:5px;
+    color:#880000;
+    white-space:nowrap;
+}
+.WF .action .RejectC
+{
+    margin-right:5px;
+    color:#ee0000;
+    white-space:nowrap;
+}
+.WF .action .IgnoreC
+{
+    margin-right:5px;
+    color:#ee0000;
+    white-space:nowrap;
+}
+
+.WF .action button
+{
+    margin-right:3px;
+     white-space:nowrap;
+}
+
+.WF tr.even
+{
+    background-color: #efefef;
+}
+/* 以下是已簽核資訊 畫面*/
+.WFH .stage
+{
+    border: 1px dash grey;
+    background-color: #efefef;
+}
+.WFH .stage .name
+{
+    font-weight:bold;
+    text-align:center;
+    background-color: #dedede;
+    width:100%;
+}
+.WFH TABLE
+{
+    width:100%;
+}
+.WFH .opinion
+{
+    border: 1px dotted grey;
+}
+
+.WFH .downArrow /* 向下箭頭*/
+{
+    background-image:url(images/Tools_MoveDown.gif);
+    background-repeat:no-repeat;
+    background-position:center ;
+    height:15px;
+    width:100%;
+}
+.WFH .ApproveC
+{
+    margin-right:5px;
+    color:#008800;
+}
+.WFH .DisapproveC
+{
+    margin-right:5px;
+    color:#880000;
+}
+.WFH .RejectC
+{
+    margin-right:5px;
+    color:#ee0000;
+}
+.WFH .IgnoreC
+{
+    margin-right:5px;
+    color:#ee0000;
+}
+.WFH .IgnoreC
+{
+    margin-right:5px;
+    color:#ee0000;
+}
+.WFH .signature
+{
+    padding-left:18px;
+    color:#330099;
+    font-weight:bold;
+    background-image:url(images/drawing_pen.png);
+    background-repeat:no-repeat;
+    background-position:left top;
+    background-size: 16px 16px;
+    margin-top:5px;
+}
+.WFH .signer
+{
+    margin-left:15px;
+    padding-left:20px;
+    font-weight: normal;
+    color:#0000bb;
+    background-image:url(images/User.png);
+    background-repeat:no-repeat;
+    background-position:left top;
+    background-size: 16px 16px;
+}
+
+.WFT DIV
+{
+    float:left;
+}
+.WFT .rightArrow /* 向下箭頭*/
+{
+    background-image:url(images/Tools_MoveRight.gif);
+    background-repeat:no-repeat;
+    background-position:center ;
+    height:15px;
+    width:15px;
+}
+.WF0 .nxStage
+{
+    max-height:30%;
+    min-height:60px;
+    overflow:auto;
+    border:1px dotted #666666;
+    padding:3px 3px 3px 3px;
+}
+.WF0 .nxStage .signer:hover
+{
+    background-color:#eeff33;
+}
+.lyoRoom
+{
+    border:1px dotted red;
+    background-color:#ffffbf;
+    overflow:auto;
+    overflow-x:auto;
+    overflow-y:auto;
+}
+.lyoRoom .floor
+{
+    border:1px dotted red;
+    
+}
+.splitBar
+{
+    opacity:0.6;
+    background-color: Highlight;
+}
+.lyoSplitBtnU, .lyoSplitBtnD, .lyoSplitBtnL, .lyoSplitBtnR, .lyoTurnBtn {
+    cursor:pointer;
+    background-color: #dedede;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+.lyoSplitBtnU
+{
+    background-image:url(images/SplitBtnU.gif);
+    background-size: 11px 100%;
+    background-position:center top;
+}
+.lyoSplitBtnU:hover
+{
+    background-color: #ffbbbb;
+}
+.lyoSplitBtnD
+{
+    background-image:url(images/SplitBtnD.gif);
+    background-size:11px 100%;
+    background-position:center bottom;
+}
+.lyoSplitBtnD:hover
+{
+    background-color: #ffbbbb;
+}
+.lyoSplitBtnL
+{
+    background-image:url(images/SplitBtnL.gif);
+    background-size:100% 11px;
+}
+.lyoSplitBtnL:hover
+{
+    background-color: #ffbbbb;
+}
+.lyoSplitBtnR
+{
+    background-image:url(images/SplitBtnR.gif);
+    background-size:100% 11px;
+}
+.lyoSplitBtnR:hover, .lyoTurnBtn :hover
+{
+    background-color: #ffbbbb;
+}
+.lyoTurnBtn {
+    background-image:url(images/page.png);
+    background-size: 100% 100%;
+    border:2px dotted #003F87;
+}
+.tabStrip
+{
+    background-color:#eaeaf0;
+    width:100%;
+    min-height:1em;
+    overflow:visible;
+    overflow-y:visible;
+    height: auto;
+}
+.tabStrip .Tabs DIV
+{
+    background-color:#F7E8AA;
+}
+.tabStripContainer
+{
+    overflow:auto;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+.DialogIcon
+{
+    float:left;
+    position:static ;
+    overflow:hidden;
+    max-width:90px;
+    max-height:1.6em;
+    min-height:1.5em;
+    cursor:default;
+    border-radius:5px 5px 5px 5px;
+    /*    height:100%;
+*/
+    border-left: 1px solid #ffffff;  
+    border-top: 1px solid #ffffff;  
+    border-right: 1px solid #999999;  
+    border-bottom: 1px solid #999999;
+    padding: 2px 2px 2px 22px;
+    background: -moz-linear-gradient(top, #ADE6F6,#3DD6E6);
+    background: -webkit-gradient(linear, left top, left bottom, from(#BEEFFF), to(#3DDFEF));
+    background: -ms-linear-gradient(top,#BEEFFF,#3DDFEF);
+    background-image:url(images/DialogIcon16.png);
+    background-repeat:no-repeat;
+    background-position:3px center;
+    background-size:16px;
+    font-size:0.8em;
+    margin-top: 0px;
+    background-color: inherit;
+}
+.DesignerLabel
+{
+    background-color:#dedede;
+    height:1.53em;
+    vertical-align:middle;
+}
+/* 樞紐分析表 */
+.PivotLabel
+{
+    border-left: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    background-color: #FCD856;
+    margin-top:0px;
+    padding-left:3px;
+    padding-top:3px;
+    /*
+    background: -moz-linear-gradient(top, #F7E8AA,#FCD856);
+    background: -webkit-gradient(linear, left top, left bottom, from(#F7E8AA), to(#FCD856));
+    background: -ms-linear-gradient(top,#F7E8AA,#FCD856);
+*/
+    background-image:url(images/Tools_MoveDown.gif);
+    background-repeat:no-repeat;
+    background-position:right top;
+    cursor:default;
+}
+.PivotLabel:hover
+{
+    background-color:#F7E8AA;
+}
+.PivotLabel .PivotLabel
+{
+    background-color: #DCF856;
+        margin-left:16px;
+}
+.PivotLabel .PivotLabel:hover
+{
+    background-color: #E7F8AA;
+}
+.PivotLabel .PivotLabelPty,.PivotLabel .PivotLabelPty .PivotLabel
+{
+    background-color: #EDA0D3;
+}
+.PivotLabel .PivotLabelPty,.PivotLabel .PivotLabelPty .PivotLabel:hover
+{
+    background-color: #F2BAD8;
+}
+
+/* 樞紐分析表 */
+
+/* 甘特圖 */
+.ganttBarPlan 
+{
+    min-height:11px;
+    background-color:#00B2AA;
+    opacity:0.85;
+    font-size:80%;
+    overflow:visible;
+}
+.ganttBarText
+{
+    margin-top:0px;
+    font-size:80%;
+    overflow:visible;
+}
+.ganttBarActual
+{
+    min-height:5px;
+    background-color: Orange;
+    margin-top:1px;
+    opacity:0.85;
+}
+.ganttBarActualDoing
+{
+    min-height:5px;
+    background-color: Orange;
+    margin-top:1px;
+    background-image:url(images/Tools_Small_ItemRemove.gif);
+    background-repeat:no-repeat;
+    background-position:right center;
+    background-size: 8px 8px;
+    opacity:0.85;
+}
+.ganttBarOther
+{
+    min-height:5px;
+    background-color: Purple;
+    margin-top:1px;
+    opacity:0.85;
+}
+
+.ganttBarHintDrag
+{
+    /*min-height:16px;*/
+    font-size:60%;
+    opacity:0.6;
+    position:absolute;
+    background-color: Red;
+}
+.ganttTD
+{
+    white-space:nowrap;
+    overflow:hidden;
+}
+.ganttCtrlBox
+{
+    float:right;
+}
+.GEGNTBAR /* Scroll bar for Gantt in GridEdit Column*/
+{
+    margin-top:0px;
+}
+
+::-webkit-scrollbar-button       {  }
+::-webkit-scrollbar-track        {  }
+::-webkit-scrollbar-track-piece  {  }
+::-webkit-scrollbar-thumb        {  }
+::-webkit-scrollbar-corner       {  }
+::-webkit-resizer                {  }
+.GEGNTBAR::-webkit-scrollbar-button
+{
+    background-color:#ccccff;
+} /* Scroll bar for Gantt in GridEdit Column*/
+.chkGanttMaximized
+{
+    background-color:Yellow;
+    display:none;
+}
+.gntSetting /* 設定 按鈕*/
+{
+    border-radius:3px 3px 3px 3px;/*
+    background: -moz-linear-gradient(top, #ADE6F6,#3DD6E6);
+    background: -webkit-gradient(linear, left top, left bottom, from(#BEEFFF), to(#3DDFEF));
+    background: -ms-linear-gradient(top,#BEEFFF,#3DDFEF);*/
+    width: 24px;height: 20px;
+    background-color:#ADE6F6;
+    margin-top:2px;
+    margin-right:3px;
+    border-left: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    display:inline-block;
+    float:left;
+    background-image:url(images/setting_flat_16.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    cursor:default;
+}
+.gntSetting:hover
+{
+    background-color:#8DB6C6;
+}
+.ganttMenu
+{
+    min-width:160px;
+    height:auto;
+    background-color:#8DB6C6;
+    cursor:default;
+    white-space:pre;
+}
+.ganttMenu .ZoomIn
+{
+    background-image:url(images/Tools_ZoomIn.gif);
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+.ganttMenu .ZoomOut
+{
+    background-image:url(images/Tools_ZoomOut.gif);
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+
+.ganttMenu .WidthSW /* 最大寬度顯示 */
+{
+    background-image:url(images/table_chart_32.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    white-space:pre;
+    text-align:center;
+}
+.ganttMenu .WidthAdjB 
+{
+    background-image:url(images/table_chart_32.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+}
+.ganttMenu .UWidthAdj /* Unit width adjustment plus*/
+{
+    background-image:url(images/tableTitle_BW32.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+}
+.ganttMenu .FontAdjP
+{
+    background-image:url(images/font_increase_32.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+}
+.ganttMenu .FontAdjM
+{
+    background-image:url(images/font_decrease_32.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+}
+.ganttMenu .ZoomIn:hover,.ZoomOut:hover,.WidthSW:hover,.WidthAdj:hover,.swTextDsp:hover,.swLinesDsp:hover, .printPre:hover, .printPreA:hover, .FontAdjM:hover
+, .FontAdjP:hover , .UWidthAdjP:hover, .UWidthAdjM:hover, .dragBarSW:hover, .extraBarSW:hover
+{
+    background-color: #CDF9B6;
+    opacity:0.7;
+}
+
+.ganttMenu DIV
+{
+    min-height:24px;
+    white-space:pre;
+    text-align:center;
+}
+.ganttTitle
+{
+    text-align:left;
+    background-color:transparent;
+    font-size:80%;
+    padding-top:0px;
+    padding-bottom:0px;
+    height:100%;
+}
+.ganttTitle .row0
+{
+    border-top:0px solid #bfbfbf;
+    border-bottom:1px solid #bfbfbf;
+    padding-top:0px;
+    padding-bottom:0px;
+    white-space:nowrap;
+    padding-top:0px;
+    padding-bottom:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+    min-height:16px;
+}
+.ganttTitle .row
+{
+    border-top:0px solid #bfbfbf;
+    border-bottom:0px solid #bfbfbf;
+    padding-top:0px;
+    padding-bottom:0px;
+    white-space:nowrap;
+    margin-top:0px;
+    margin-bottom:0px;
+    border-spacing:0px;
+    min-height:16px;
+}
+.ganttTitle .cell
+{
+    text-align:center;
+    border-right:1px solid #bfbfbf;
+    border-top:0px solid #bfbfbf;
+    height: auto;
+    padding-top:2px;
+    /*margin-bottom:-3px;*/
+}
+.ganttBackPanel
+{
+    background-color: transparent;
+    margin-top:0px;
+}
+.ganttBackPanel .cell
+{
+    text-align:left;
+    border-right:1px dashed #333333;
+    border-top:0px solid #bfbfbf;
+    height: 100%;
+    background-color:transparent;
+}
+.ganttBackPanel .holidayArea
+{
+    position:absolute;
+    display:inline-block;
+    border:0px none white;
+    background-color: #ebffeb;
+    height:100%;
+}
+/* 甘特圖 WidthAdj_Max.png */
+.ReviseRequest /* 資料變更申請畫面*/
+{
+    background-repeat:no-repeat;
+    background-color:inherit;
+}
+.ReviseRequest .actBar , .ReviseRequest .reqHistory
+{
+    border-bottom:0px solid #800000;
+    padding:2px;
+}
+.ReviseRequest .objectText
+{
+    white-space:pre;
+    overflow:hidden;
+    display:none;
+}
+.ReviseRequest .actBar INPUT
+{
+    background-repeat:no-repeat;
+    background-position:3px 2px;
+    min-height:24px;
+    border:1px solid #cccccc;
+    margin-right:3px;
+}
+.ReviseRequest .actBar INPUT:hover
+{
+    background-color: rgb(150,250,150);
+}
+.ReviseRequest .dspArea /* 資料變更申請畫面*/
+{
+    overflow:auto;
+    clear:both;
+    border-top:1px solid #bbbbbb;
+}
+.ReviseRequest .reason4Chg
+{
+    width:95%;
+    margin:0px;
+    min-height:48px;
+}
+.ReviseRequest .dataTabs
+{
+height:25px;
+border:0px dotted black;
+}
+.ReviseRequest .dataArea, .fileArea, .fileCOArea, .flowArea /* 資料變更申請畫面*/
+{
+    min-width:200px;
+    min-height:60px;
+    background-color:inherit;
+    border-bottom:2px dashed #eeaaaa;
+}
+.ReviseRequest .dataArea:hover, .fileArea:hover, .fileCOArea:hover, .flowArea:hover /* 資料變更申請畫面*/
+{
+    
+}
+.ReviseRequest .saveReq
+{
+    float:none;
+}
+.ReviseRequest .currState
+{
+    float:right;
+    margin-right:10px;
+}
+.tileContainer
+{
+    display:; /*一般螢幕上tile mode不顯示,只在行動裝置(手機等較小畫面的裝置)才顯示*/
+    overflow:visible;
+    width:100%;
+    height:auto;
+}
+.tileContainer .tile
+{
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 80%;
+    min-height: 20px;
+    min-width:120px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    text-overflow: ellipsis;
+    width:12%;
+    height:auto;
+    border:1px solid #dedede;
+    border-right-color:#aaaaaa;
+    border-bottom-color:#aaaaaa;
+    display:inline-block; /*inline-block  inline-flex */
+    white-space: nowrap;
+    border-radius: 5px 5px 5px 5px;
+    padding:2px 2px 2px 2px;
+    cursor:pointer;
+}
+.tileContainer .tile:hover
+{
+    background-color:#ffdd33;
+}
+
+/*Chart Designer block*/
+DIV.ChartDesign
+{
+    background-repeat:no-repeat;
+    min-height:400px;
+    min-width:200px;
+    width:100%;
+    height:100%;
+}
+DIV.ChartDesign .dsAxisX, DIV.ChartDesign .dsAxisY , DIV.ChartDesign .dsAxisZ
+{
+    padding:1px 2px 5px 3px;
+    text-overflow:ellipsis;
+    max-height:3em;
+    max-width:100%;
+    height:auto;
+    overflow:hidden;
+}
+DIV.ChartDesign  input , DIV.ChartDesign  select {
+    margin-bottom:3px;
+}
+DIV.ChartDesign .SeriesOp, DIV.ChartDesign .dsFilterOp {
+    padding-left:16px;
+    padding-top:3px;
+    padding-bottom:3px;
+    background-color:#f2f6d2;
+}
+DIV.ChartDesign .dsFilterOp {
+    background-color:#e2f6e2;
+}
+DIV.ChartDesign .ChartOptions SPAN, DIV.ChartDesign .DataSeriesOptions SPAN {
+    display:inline-block;
+    margin-right:8px;
+}
+/*DIV.ChartDesign SPAN.value2{
+    display:inline-block;
+    margin-left:16px;
+}*/
+
+.ChartAttrDlg SPAN {
+    margin-bottom: 3px;
+}
+.ChartAttrDlg INPUT[type='text'] {
+    border:1px solid #afafaf;
+    width:70px;
+}
+.ChartAttrDlg .attrsObjU {
+    background-repeat:no-repeat;
+    background-image:url(images/Tools_MoveUp.gif);
+    background-position:right top;
+}
+.ChartAttrDlg .attrsObjD {
+    background-repeat:no-repeat;
+    background-image:url(images/Tools_MoveDown.gif);
+    background-position:right top;
+}
+.ChartAttrDlg .attrItem {
+    margin-left: 16px;
+    margin-right: 3px;
+    margin-top: 5px;
+    display:block;
+}
+.ChartAttrDlg .attrItemOption {
+    margin-left: 16px;
+    display:inline-block;
+}
+/*Chart Plot Dialog*/
+.teChartDialog
+{
+    
+}
+.teChartDialog .option
+{
+    display:inline-block;
+    margin-right:16px;
+}
+.teChartDialog .ItemsList
+{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.teChartDialog .buttons button
+{
+    margin:1px;
+}
+.teChartContainer{
+    background-color:#cdcdcd;
+    min-width:400px;
+    min-height:400px;
+}
+.plot-container .plotly
+{
+    background-image:url((images/Tools_MoveUp.gif);
+}
+
+/* 物件排列設計界面
+.LayoutDesign DIV.dspArea
+{
+    min-height:500px;
+    width:100%;
+}
+.teDialog .Area .LayoutDesign DIV {
+    margin-left:16px;
+    background-color:forestgreen;
+}
+*/
+/*@media 的設定似乎需要放在指定的類別之後才會生效,例如底下 sceeen 內的body 樣式,如果把@media screen  區塊移到 標準的沒有@media的區塊之前就不會有作用*/
+@media screen and (max-width: 18cm) and (max-height: 15cm), screen and (max-device-width: 18cm) and (max-device-height: 15cm) {
+    DIV.teTopPanel
+    {
+        /* 不限制高度,因為實際是用起來toolbar 用卷軸很難操作
+            觀察一些網站的設計,Panel一般會讓水平卷軸auto,垂直捲軸不顯示
+        */
+        max-height:32px;
+        overflow-x:auto;
+        overflow-y:hidden;
+        white-space:nowrap;
+    }
+    .GridToolBar
+    {
+        /* 不限制高度,因為實際是用起來toolbar 用卷軸很難操作
+            觀察一些網站的設計,Panel一般會讓水平卷軸auto,垂直捲軸不顯示
+        */
+        overflow:auto;
+    }
+
+    DIV.teTopPanel DIV DIV
+    {
+        /*max-height:26px; max-height:24px;不限制高度,因為實際是用起來toolbar 用卷軸很難操作*/
+        float:none;
+        display:inline;
+    }
+    .GridToolBar SPAN  /*, .GridToolBar .Save, .GridToolBar .SaveWhole, .GridToolBar .InsertRow, .GridToolBar .Export, .GridToolBar .DeleteData, .GridToolBar .mnuOthers */
+    {
+        /*max-height:26px; max-height:24px;不限制高度,因為實際是用起來toolbar 用卷軸很難操作*/
+        display:none;
+    }
+    .GridToolBar .mnuOthers , .GridToolBar .mnuQuickQry, .GridToolBar .QuickQryM,  .GridToolBar .SortA, .GridToolBar .SortD
+    {
+        /*max-height:26px; max-height:24px;不限制高度,因為實際是用起來toolbar 用卷軸很難操作*/
+        display:inline;
+    }
+    .tileContainer
+    {
+        display:inherit;
+    }
+    .GridStatusBar .PageNoList SPAN
+    {
+        padding-left:0px;
+        text-decoration:underline;
+        margin-left:6px;
+        width:24px;
+        color:Red;
+        /*font-weight:bolder;*/
+        cursor:pointer;
+    }
+    .GridStatusBar .PageNoList SPAN.Current
+    {
+        font-weight:bold;
+    }
+    .GridStatusBar .PageNoList .MoveBack
+    {
+        /*float:left;
+        background-image:url(images/Tools_MovePrevious.gif);
+        background-position:-3px center;*/
+        width:34px; height:17px;
+        border:1px dotted #666666;
+        text-decoration:none;
+        font-weight:bold;
+        color:Red;cursor:pointer;
+        display:inline-block;
+        text-align:center;
+    }
+    .GridStatusBar .PageNoList .MoveForward
+    {
+        /*float:left;
+        background-image:url(images/Tools_MoveNext.gif);
+        background-position:center center;*/
+        width:34px; height:17px;
+        border:1px dotted #666666;
+        text-decoration:none;font-weight:bold;
+        display:inline-block;
+        color:Red;cursor:pointer;
+        text-align:center;
+    }
+}
+
+@media print {
+    .GridToolBar, .GridStatusBar, .qryParamArea, DIV.teTopPanel, TR.GridCriterionArea, #btnValSel, .pnl4TopMargin, .lyoSplitBtnL, .lyoSplitBtnR, .lyoSplitBtnU, .lyoSplitBtnD
+    {
+        display:none;
+    }
+    BODY
+    {
+        margin-left: 0.0cm;
+        margin-top: 0.0cm;
+        margin-right: 0.0cm;
+        margin-bottom: 0.0cm;
+        overflow: visible;
+    }
+    @page
+    {
+        margin-left: 0.0cm;
+        margin-top: 0.0cm;
+        margin-right: 0.0cm;
+        margin-bottom: 0.0cm;
+        overflow: visible;
+    }
+     .teDialog[maxed]
+    {
+        border-left:0px solid #666666;
+        border-top:0px solid #666666;
+        border-right:0px solid #666666;
+        border-bottom:0px solid #666666;
+        background-color:white;
+        -webkit-box-shadow: none;
+        -ms-box-shadow: none;
+        box-shadow:none;
+    }
+    .teDialog[maxed] .caption
+    {
+        display:none;
+    }
+    .teDialog[maxed] .modebar.modebar--hover
+    {
+        display:none;
+    }
+}

@@ -1,0 +1,75 @@
+﻿@using WebTemplate.Helper;
+@using System.Configuration;
+@using MesSerialNumber.Constant;
+@{
+    Uri MyUrl = Request.Url;
+    string FullUrl = Request.Url.AbsoluteUri.Substring(0, Request.Url.AbsoluteUri.LastIndexOf(Request.Url.AbsolutePath)) + Request.ApplicationPath;
+    if (FullUrl.Substring(FullUrl.Length - 1, 1) != "/")
+    {
+        FullUrl = FullUrl + "/";
+    }
+}
+@section scripts {
+    <script src="@Url.Content("~/Scripts/Account/Login.js?UpdateDateTime="+HttpContext.Current.Session[Common.UPDATEDATETIME])" type="text/javascript"></script>
+}
+<script>
+    var URL = '@FullUrl';
+</script>
+<div class="login-container">
+    <div class="language-code-container">
+        <div id="languageCodeContainer" class="float-right">
+            @Html.Raw(ViewHelper.RenderSupportedLanguages(this))
+        </div>
+    </div>
+    <form id="form" action="" method="post">
+        @if (MyUrl.Authority == ConfigurationManager.AppSettings[Common.APP_SETTINGS_KEY_TEST_URL_AUTHORITY])
+        {
+            <div id="TestEnvironmentLogin" class="login-title" style="color: Red; float: left; width: 100px;">
+            </div>
+        }
+        <div id="Title" class="login-title">
+        </div>
+        <div>
+            <div class="float-left">
+                <div class="login-app-image">
+                </div>
+            </div>
+            <div class="float-left login-info-container">
+                <div class="margin-left-110px">
+                    <span id="LoginInfo" class="login-info"></span>
+                </div>
+                <div class="margin-top-10px">
+                    <div id="Account" class="login-info-account">
+                    </div>
+                    <input id="account" name="account" type="text" class="login-info-account-input ui-corner-all" />
+                </div>
+                <div class="margin-top-10px">
+                    <div id="Password" class="login-info-password">
+                    </div>
+                    <input id="password" name="password" type="password" class="login-info-password-input ui-corner-all" />
+                </div>
+                <div class="margin-top-10px">
+                    <div id="Domain" class="login-info-domain">
+                    </div>
+                    @Html.Raw(ViewHelper.RenderSupportedDomains(this, null, null))
+                </div>
+                @*
+                    <div class="margin-left-110px margin-top-10px">
+                        <input id="rememberMe" type="checkbox" class="login-info-rememberme-input" checked />
+                        <label for="rememberMe">
+                            <span id="RememberMe" class="login-info-rememberme"></span>
+                        </label>
+                    </div>
+                *@
+                <div class="margin-left-110px margin-top-10px">
+                    <input id="Login" type="submit" class="login-button ui-corner-all" />
+                </div>
+                <div class="margin-left-110px margin-top-10px">
+                    <span id="loginResult" class="login-result"></span>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="float-right login-footer">
+    </div>
+</div>

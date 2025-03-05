@@ -1,0 +1,42 @@
+# Variables for the first solution
+stages:
+  - build_deploy
+
+variables:
+  OUTPUT_DIR: "C:\\GitLab-Runner\\deploy\\"
+
+# Job for the first solution file
+dev_build_api_deploy:
+  stage: build_deploy
+  tags:
+    - wiis-t-runner
+  variables:
+    API_CODE_PATH: "API\\MESSerialNumberAPI\\"
+    SOLUTION_FILE: "MESSerialNumberAPI.sln"
+    DEV_IIS_PATH: "C:\\inetpub\\eInvCentreSite\\MESSNSERVICE"
+  script:
+    - Remove-Item "$OUTPUT_DIR\\*" -Recurse -Force
+    - cd $API_CODE_PATH
+    - nuget restore $SOLUTION_FILE
+    - msbuild $SOLUTION_FILE /p:Configuration=Debug /p:DeployOnBuild=true /p:VisualStudioVersion=14.0 /p:outdir=$OUTPUT_DIR
+    - xcopy "$OUTPUT_DIR\\_PublishedWebsites\\MESSerialNumberAPI" "$DEV_IIS_PATH" /s /e /y
+  only:
+    - dev
+
+# Job for the second solution file
+dev_build_web_deploy:
+  stage: build_deploy
+  tags:
+    - wiis-t-runner
+  variables:
+    API_CODE_PATH: "Web"                
+    SOLUTION_FILE: "MESSerialNumber.sln" 
+    DEV_IIS_PATH: "C:\\inetpub\\eInvCentreSite\\MESSN" 
+  script:
+    - Remove-Item "$OUTPUT_DIR\\*" -Recurse -Force
+    - cd $API_CODE_PATH
+    - nuget restore $SOLUTION_FILE
+    - msbuild $SOLUTION_FILE /p:Configuration=Debug /p:DeployOnBuild=true /p:VisualStudioVersion=14.0 /p:outdir=$OUTPUT_DIR
+    - xcopy "$OUTPUT_DIR\\_PublishedWebsites\\MesSerialNumber" "$DEV_IIS_PATH" /s /e /y
+  only:
+    - dev
